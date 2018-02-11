@@ -10,11 +10,16 @@
 }
 
 .nav-menu .nav-wrapper .brand-logo{
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   padding-right: 1em;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
   width: 100%;
+}
+
+.nav-wrapper .button-collapse i {
+  font-size: 2.4em;
 }
 
 .side-nav {
@@ -23,8 +28,8 @@
 
 /* end nav */
 
-/* banner */
-.banner-about-me {
+/* info */
+.info-about-me {
   background-color: #fff;
 }
 
@@ -39,26 +44,23 @@
 .my-profile-pic {
   /* margin-top: 4em; */
 }
-/* end banner */
+/* end info */
 
 /* word carousel */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400); */
 .frame {
-  position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
-  width: 100%;
-  height: 4em;
-  /* margin-top: -200px; */
-  /* margin-left: -200px; */
+  background: #64a263;
   border-radius: 2px;
   box-shadow: 1px 4px 19px 3px rgba(0, 0, 0, 0.19);
-  overflow: hidden;
-  background: #64a263;
   color: #fff;
+  font-size: 1.7rem;
+  height: 9vh;
+  position: absolute;
+  overflow: hidden;
   font-family: 'Open Sans', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 .center {
@@ -157,7 +159,7 @@
 
 /* Section About Me */
 .about-me {
-  margin: 5em 3em;
+  margin: 5em 3em 4em 3em;
 }
 
 .my-info {
@@ -165,6 +167,7 @@
 }
 
 .my-info p {
+  font-size: 1.2rem;
   text-align: center;
 }
 /* End section About me */
@@ -173,6 +176,7 @@
 .project-title {
   display: flex;
   justify-content: center;
+  margin: 1em 0;
 }
 
 .project-title h2 {
@@ -180,7 +184,7 @@
   box-shadow: 0px 3px 7px 0px rgba(113, 113, 114, 0.86);
   color: #fff;
   font-size: 2rem;
-  padding: 0.8em;
+  padding: 0.6em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -190,7 +194,12 @@
   text-align: center;
 }
 
+.info-project p {
+  font-size: 1.2rem;
+}
+
 .info-project a {
+  font-size: 1.3rem;
   margin: 2.7em 0;
 }
 /* End section projects */
@@ -201,6 +210,7 @@ footer {
   background-color: #000;
   color: #fff;
   display: flex;
+  font-size: 1.2rem;
   height: 10vh;
 }
 /* End footer */
@@ -213,20 +223,114 @@ footer {
 } */
 
 @media screen and (min-width: 576px) {  
+  /* Nav */
+  .nav-menu {
+    /* height: 7vh; */
+  }
+
+  .nav-menu .nav-wrapper .brand-logo {
+    font-size: 2.1rem;
+  }
+
+  .nav-wrapper .button-collapse i {
+    font-size: 3em;
+  }
+  /* End nav */
+
+  /*About me */
+
+  .carousel {
+    font-size: 2.5rem;
+  }
+  .my-info {
+    margin-top: 8em;
+  }
+
+  .my-info p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  /* End about me */
+
+  /* Projects */
   .project-title {
     margin: 0 4em;
     padding: 0.8em 0;    
   }
+
+  .project-title h2 {
+    font-size: 3rem;
+  }
+
+  .info-project h4 {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+  }
+
+  .info-project p {
+    font-size: 2rem;
+  }
+
+  .info-project a {
+    font-size: 2.5rem;
+    margin: 2.7em 0;
+    padding: 3rem;
+    line-height: 1px;
+  }
+  /* End projects */
+
+  /* Footer */
+  footer {
+    font-size: 2rem;
+  }
+  /* End Footer */
 }
 
  /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) { 
+  /* About me */
+  .my-info p {
+    font-size: 1.3rem;
+  }
+  /* End about me */
+
+  /* Projects */
+  .project-title h2 {
+    font-size: 2rem;
+    width: 40vw;
+  }
+
+  .info-project h4 {
+    font-size: 2.5rem;
+  }
+
+  .info-project p {
+    font-size: 1.5rem;
+  }
+
+  .info-project a {
+    font-size: 1.6rem;
+    padding: 2rem;
+  }
+  /* End projects */
+
+  /* Footer */
+  footer {
+    font-size: 1.5rem;
+  }
+  /* End footer */
 
  }
 
  /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) { 
-  
+  /* Nav */
+  .nav-menu .nav-wrapper .brand-logo {
+    font-size: 1.6rem;
+    text-align: left;
+    padding-left: 1em;
+  }
+  /* End nav */
  }
 
  /* Extra large devices (large desktops, 1200px and up) */
