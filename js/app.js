@@ -18,4 +18,6 @@ $(document).ready(function(){
     window.open('','','width=600,height=400,left=50,top=50,toolbar=yes');
   });
 
+
+  $('#modal1').modal();
 });
