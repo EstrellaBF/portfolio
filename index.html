@@ -40,6 +40,7 @@
         </li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
+          <i class="material-icons">menu</i>
         <li>
           <a href="sass.html">About Me</a>
         </li>
@@ -105,7 +106,7 @@
       </div>
     </div>
   </section>
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="container">
       <div class="row">
         <div class="col-s12">
@@ -114,22 +115,28 @@
       </div>
       <div class="row">
         <div class="col-s12">
-          <a href="https://estrellabf.github.io/social-network/">
-            <h4>Red Social</h4>
-          </a>
-          <p>Reto de Laboratoria para crear una red social.</p>
-          <p>Nuestra propuesta está basada en una red social hecha para alumnas y egresadas de laboratoria, para compartir ideas y eventos relacionados al mundo de la programación.</p>
-          <a class="waves-effect waves-light btn-large">Previsualiza</a>
+          <div class="info-project">
+            <h4>Laboratoria's Social Network</h4>
+            <p>It's based on a needed we have a Laboratorian students to connect each other, even if we are from a different
+              generation.
+            </p>
+            <a class="waves-effect waves-light btn-large" id="preview-sn">Previsualiza</a>
+          </div>
         </div>
         <div class="col-s12">
-          <h4>Foodmap</h4>
-          <p>Foodmap es una webapp que ubicará los restaurantes en el distrito o dirección que desees, y hasta marcará la ruta para que puedas manejar tranquilo.</p>
-          <a class="waves-effect waves-light btn-large">Previsualiza</a>
+          <div class="info-project">
+            <h4>Foodmap</h4>
+            <p>Fodmap is a webapp who search restaurants near to you. You can also search by districts or specific address.</p>
+            <a class="waves-effect waves-light btn-large" id="preview-fm">Previsualiza</a>
+          </div>
         </div>
         <div class="col-s12">
-          <h4>Tarjeta de Crédito</h4>
-          <p>Esta es una página que validará la tarjeta de crédito que se ingresa</p>
-          <a class="waves-effect waves-light btn-large">Previsualiza</a>
+          <div class="info-project">
+            <h4>Credit Card Validator</h4>
+            <p>Our web app let you verify is a credit card number exists. Currently is in development because we need to integrate
+              it to an credit card database. You can verify it with a credit card number sample.</p>
+            <a class="waves-effect waves-light btn-large" id="preview-tc">Previsualiza</a>
+          </div>
         </div>
       </div>
     </div>
@@ -141,6 +148,7 @@
       </div>
     </div>
   </footer>
+
   <script src="vendors/jquery/jquery.min.js"></script>
   <script src="vendors/materialize/js/materialize.min.js"></script>
   <script src="js/app.js"></script>

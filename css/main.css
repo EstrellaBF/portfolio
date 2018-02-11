@@ -6,7 +6,7 @@
 }
 /* nav */
 .nav-menu {
-  background-color: #226cea;
+  background-color: #457396;
 }
 
 .nav-menu .nav-wrapper .brand-logo{
@@ -25,9 +25,9 @@
 }
 
 .dinamic-box-info {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   margin-top: 1em;
 }
@@ -50,7 +50,7 @@
   border-radius: 2px;
   box-shadow: 1px 4px 19px 3px rgba(0, 0, 0, 0.19);
   overflow: hidden;
-  background: #26cb69;
+  background: #64a263;
   color: #fff;
   font-family: 'Open Sans', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -152,6 +152,10 @@
 /* end word carousel */
 
 /* Section About Me */
+.about-me {
+  margin: 5em 3em;
+}
+
 .my-info {
   margin-top: 5em;
 }
@@ -163,13 +167,34 @@
 
 /* Section Projects */
 .project-title {
-  text-align: center
+  background-color: #457396;
+  box-shadow: 0px 3px 7px 0px rgba(113, 113, 114, 0.86);
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 1em;
+  padding: 0.3em 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-project {
+  margin: 2.8em 0;
+  text-align: center;
+}
+
+.info-project a {
+  margin: 2.7em 0;
 }
 /* End section projects */
 
 /* Footer */
 footer {
+  align-items: center;
   background-color: #000;
   color: #fff;
+  display: flex;
+  height: 10vh;
 }
 /* End footer */
+
+
