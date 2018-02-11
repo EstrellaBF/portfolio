@@ -17,6 +17,10 @@
   width: 100%;
 }
 
+.side-nav {
+  width: 60%;
+}
+
 /* end nav */
 
 /* banner */
@@ -167,12 +171,16 @@
 
 /* Section Projects */
 .project-title {
+  display: flex;
+  justify-content: center;
+}
+
+.project-title h2 {
   background-color: #457396;
   box-shadow: 0px 3px 7px 0px rgba(113, 113, 114, 0.86);
   color: #fff;
   font-size: 2rem;
-  margin: 0 1em;
-  padding: 0.3em 0;
+  padding: 0.8em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -197,4 +205,32 @@ footer {
 }
 /* End footer */
 
+/* MEDIA QUERIES */
+/* @media screen and ( min-width: 576px ){
+  .project-title {
+  background-color:red;
+  color: yellow;}
+} */
+
+@media screen and (min-width: 576px) {  
+  .project-title {
+    margin: 0 4em;
+    padding: 0.8em 0;    
+  }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) { 
+
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+  
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) { 
+  
+ }
 
