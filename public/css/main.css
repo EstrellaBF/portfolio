@@ -39,7 +39,7 @@ main .col-xs-12, footer .col-xs-12  {
   background-color: rgba(0, 0, 0, 0.315);
   color: #fff;
   font-family: 'Sacramento', cursive;
-  font-size: 2em;
+  font-size: 2rem;
   height: 100%;
   left: 0;
   line-height: 8em;
@@ -127,7 +127,7 @@ h2, h3, h4, h4 {
 
 .icon-tech-skill img {
   height: 98px;
-  width: 100%;
+  /* width: 100%; */
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
@@ -147,4 +147,50 @@ footer {
   color: #fff;
   margin-top: 4em;
   padding: 2em;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 767px) {
+  .menu a {
+    font-size: 2rem;
+  }
+
+  .img-background h1 {
+    font-size: 5.5rem;
+  }
+
+  .icon-tech-skill {
+    width: 15vw;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 991px) {
+  .menu a {
+    font-size: 2.3rem;
+  }
+
+  .img-background h1 {
+    font-size: 8rem;
+  }
+
+  .icon-tech-skill {
+    width: 10vw;
+  }
+ }
+
+ /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1199px) {
+  .menu a {
+    font-size: 2.5rem;
+  }
+
+  .img-background h1 {
+    font-size: 8rem;
+  }
+
+  .icon-tech-skill {
+    width: 10vw;
+    height: 35vh;
+  }
 }
