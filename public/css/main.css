@@ -17,7 +17,7 @@ body{
 
 * {
   box-sizing: border-box;
-  /*font-family: 'Work Sans', sans-serif;*/
+  font-family: 'Work Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -91,6 +91,50 @@ main .col-xs-12, footer .col-xs-12  {
   -webkit-filter: contrast(69%);
 }
 
+
+/* Tech skills */
+
+#tech-skills {
+  background-color: #000;
+}
+
+#tech-skills h3{
+  color: #fff;
+}
+
+.tech-skills-box {
+    /* display: flex; */
+    /* flex-direction: inherit; */
+    /* align-items: baseline; */
+    width: 100%;
+    text-align: center;
+}
+
+.icon-tech-skill {
+  width: 26vw;
+  height: 21vh;
+  display: inline-block;
+  padding: 1em 0;
+  /* outline: 1px solid green; */
+  text-align: center;
+  /* display: flex; */
+  margin: 0 0.5em;
+}
+
+.icon-tech-skill img {
+  height: 98px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+/* Portfolio */
+.project-img {
+  margin-bottom: 4em;
+}
+
+.project-img img {
+  width: 100%;
+}
 
 /* Footer */
 footer {
