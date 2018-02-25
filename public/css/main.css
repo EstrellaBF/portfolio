@@ -91,13 +91,17 @@ main .col-xs-12, footer .col-xs-12  {
   -webkit-filter: contrast(69%);
 }
 
+/* Soft Skills */
 
 /* Tech skills */
 
 #tech-skills {
-  background-color: #000;
+  background-color: #8a8f8a;
 }
 
+h2, h3, h4, h4 {
+  font-family: 'Sofia', cursive;
+}
 #tech-skills h3{
   color: #fff;
 }
@@ -126,6 +130,7 @@ main .col-xs-12, footer .col-xs-12  {
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
 }
 /* Portfolio */
 .project-img {
