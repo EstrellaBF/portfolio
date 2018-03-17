@@ -33,7 +33,7 @@ main .col-xs-12, footer .col-xs-12  {
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,17 +122,15 @@ main .col-xs-12, footer .col-xs-12  {
 }
 
 .home-icon svg{
-  font-size: 43px;
+  font-size: 4rem;
   position: fixed;
-  height: 100%;
+  height: 100vh;
   /* width: 160px; */
-  position: fixed;
   z-index: 1;
   top: 0;
-  left: 8.5em;
+  left: 7.7em;
   /* background-color: #111; */
   overflow-x: hidden;
-  padding-top: 20px;
 }
 
 #my-self, #my-skills, #tech-skills, #my-projects {
@@ -193,7 +191,8 @@ h2, h3, h4, h4 {
 footer {
   background-color: #000;
   color: #fff;
-  margin-top: 4em;
+  height: 10vh;
+  /* margin-top: 4em; */
   padding: 2em;
 }
 
