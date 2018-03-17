@@ -55,6 +55,11 @@ main .col-xs-12, footer .col-xs-12  {
   padding-bottom: 1em;
 }
 
+.democlass{
+  color: blue;
+  font-size: 10rem;
+}
+
 .menu {
   /* top: 0; */
   color: #fff;
@@ -115,6 +120,24 @@ main .col-xs-12, footer .col-xs-12  {
 .me-box p {
   text-align: center;
 }
+
+.home-icon svg{
+  font-size: 43px;
+  position: fixed;
+  height: 100%;
+  /* width: 160px; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 8.5em;
+  /* background-color: #111; */
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+#my-self, #my-skills, #tech-skills, #my-projects {
+  padding-right: 3em;
+} 
 
 /* Soft Skills */
 

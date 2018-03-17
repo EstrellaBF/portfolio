@@ -27,24 +27,21 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12">
-          <div class="img-background">
+          <div class="img-background" id="main-box">
             <!-- <img src="assets/images/background1.jpg" class="img-responsive" alt="Responsive image"> -->
             <h1>Estrella Benites</h1>
             <div class="menu">
-              <!-- <a href="#about-me">Sobre mí</a>
-              <a href="">Mis habilidades</a>
-              <a href="#proyects">Mi Portafolio</a> -->
-              <a href="#about-me" class="me-box">
-                <i class="fas fa-star"></i>
-                <p>Cónoceme!</p>
-              </a>
-              <a href="#projects" class="me-box">
+              <a href="#my-projects" class="me-box" id="menu-portfolio" data-name="my-projects">
                 <i class="fab fa-connectdevelop"></i>
-                <p>Mi Portafolio</p>
+                <p class ="cajita">Mi Portafolio</p>
               </a>
-              <a href="#tech-skills" class="me-box">
+              <a href="#my-skills" class="me-box" id="menu-skills" data-name="my-skills">
                 <i class="fas fa-clipboard-check"></i>
-                <p>Mis Habilidades</p>
+                <p class ="cajita">Mis Habilidades</p>
+              </a>
+              <a href="#my-self"class="me-box" id="menu-about-me" data-name="my-self">
+                <i class="fas fa-star"></i>
+                <p class ="cajita">Cónoceme!</p>
               </a>
             </div>
           </div>
@@ -52,7 +49,7 @@
       </div>
     </div>
   </main>
-  <section id="about-me">
+  <section id="my-self">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -72,10 +69,8 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
+            <div id="info-soft-skills">
             <h3>Mis habilidades Blandas</h3>
-        </div>
-        <div class="col-xs-12">
-            <div>
               <div>
                 <p>Proactiva:</p>
                 <p>Gusto de proponer ideas, tener iniciativa y no esperar a que se de el problema para empezar a realizar las cosas.
@@ -92,78 +87,68 @@
               </div>
             </div>
           </div>
+          <div class="col-xs-12">
+            <div id="info-tech-skills">
+              <h3>Habilidades Tech</h3>
+              <div class="tech-skills-box">
+                  <!-- <div class="col-xs-3"> -->
+                    <div class="icon-tech-skill">
+                      <img src="assets/images/bootstrap.png" class="img-responsive" alt="bootstrap">
+                      <!-- <figcaption>bootstrap</figcaption> -->
+                    </div>
+                  <!-- </div> -->
+                  <!-- <div class="col-xs-3"> -->
+                    <div class="icon-tech-skill">
+                      <img src="assets/images/materialize.png" class="img-responsive" alt="bootstrap">
+                      <!-- <figcaption>Materialize</figcaption> -->
+                    </div>
+                  <!-- </div> -->
+                  <!-- <div class="col-xs-3"> -->
+                    <div class="icon-tech-skill">
+                      <img src="assets/images/jquery.png" class="img-responsive" alt="bootstrap">
+                      <!-- <figcaption>Jquery</figcaption> -->
+                    </div>
+                  <!-- </div> -->
+                  <!-- <div class="col-xs-3"> -->
+                    <div class="icon-tech-skill">
+                      <img src="assets/images/firebase.png" class="img-responsive" alt="bootstrap">
+                      <!-- <figcaption>Firebase</figcaption> -->
+                    </div>
+                  <!-- </div> -->
+                  <!-- <div class="col-xs-3"> -->
+                    <div class="icon-tech-skill">
+                        <img src="assets/images/css3.png" class="img-responsive" alt="bootstrap">
+                      <!-- <figcaption>CSS</figcaption> -->
+                    </div>
+                  <!-- </div> -->
+                  <!-- <div class="col-xs-3"> -->
+                    <div class="icon-tech-skill">
+                        <img src="assets/images/html5.png" class="img-responsive" alt="bootstrap">
+                      <!-- <figcaption>HTML5</figcaption> -->
+                    </div>
+                  <!-- </div> -->
+                    <div class="icon-tech-skill">
+                        <img src="assets/images/javascript.png" class="img-responsive" alt="bootstrap">
+                    </div>
+                    <div class="icon-tech-skill">
+                        <img src="assets/images/nodejs.png" class="img-responsive" alt="bootstrap">
+                    </div>
+                    <div class="icon-tech-skill">
+                        <img src="assets/images/api.png" class="img-responsive" alt="bootstrap">
+                    </div>
+                    <div class="icon-tech-skill">
+                        <img src="assets/images/ajax.png" class="img-responsive" alt="bootstrap">
+                    </div>
+                    <div class="icon-tech-skill">
+                        <img src="assets/images/git.png" class="img-responsive" alt="bootstrap">
+                    </div>
+                </div>
+            </div>
+          </div>
       </div>
     </div>
   </section>
-  <section id="tech-skills">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div>
-            <h3>Habilidades Tech</h3>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="tech-skills-box">
-        <!-- <div class="col-xs-3"> -->
-          <div class="icon-tech-skill">
-            <img src="assets/images/bootstrap.png" class="img-responsive" alt="bootstrap">
-            <!-- <figcaption>bootstrap</figcaption> -->
-          </div>
-        <!-- </div> -->
-        <!-- <div class="col-xs-3"> -->
-          <div class="icon-tech-skill">
-            <img src="assets/images/materialize.png" class="img-responsive" alt="bootstrap">
-            <!-- <figcaption>Materialize</figcaption> -->
-          </div>
-        <!-- </div> -->
-        <!-- <div class="col-xs-3"> -->
-          <div class="icon-tech-skill">
-            <img src="assets/images/jquery.png" class="img-responsive" alt="bootstrap">
-            <!-- <figcaption>Jquery</figcaption> -->
-          </div>
-        <!-- </div> -->
-        <!-- <div class="col-xs-3"> -->
-          <div class="icon-tech-skill">
-            <img src="assets/images/firebase.png" class="img-responsive" alt="bootstrap">
-            <!-- <figcaption>Firebase</figcaption> -->
-          </div>
-        <!-- </div> -->
-        <!-- <div class="col-xs-3"> -->
-          <div class="icon-tech-skill">
-              <img src="assets/images/css3.png" class="img-responsive" alt="bootstrap">
-            <!-- <figcaption>CSS</figcaption> -->
-          </div>
-        <!-- </div> -->
-        <!-- <div class="col-xs-3"> -->
-          <div class="icon-tech-skill">
-              <img src="assets/images/html5.png" class="img-responsive" alt="bootstrap">
-            <!-- <figcaption>HTML5</figcaption> -->
-          </div>
-        <!-- </div> -->
-          <div class="icon-tech-skill">
-              <img src="assets/images/javascript.png" class="img-responsive" alt="bootstrap">
-          </div>
-          <div class="icon-tech-skill">
-              <img src="assets/images/nodejs.png" class="img-responsive" alt="bootstrap">
-          </div>
-          <div class="icon-tech-skill">
-              <img src="assets/images/api.png" class="img-responsive" alt="bootstrap">
-          </div>
-          <div class="icon-tech-skill">
-              <img src="assets/images/ajax.png" class="img-responsive" alt="bootstrap">
-          </div>
-          <div class="icon-tech-skill">
-              <img src="assets/images/git.png" class="img-responsive" alt="bootstrap">
-          </div>
-      </div>
-      </div>
-      </div>
-    </div>
-  </section>
-  <section id="projects">
+  <section id="my-projects">
     <div class="container">
       <div class="row">
           <div class="col-xs-12">
