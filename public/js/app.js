@@ -13,13 +13,13 @@
 
   // ocultando la info del menu
   let hiddenContent = function() {
-    $('.me-box p').hide();
+    // $('.me-box p').hide();
     $('#my-self').hide();
     $('#my-skills').hide();
     $('#tech-skills').hide();
     $('#my-projects').hide();
   }
- 
+
   hiddenContent();
 
   let upWindow = function() {
@@ -44,15 +44,9 @@
       hiddenContent();
       goToMenu();
       $('.home-icon').hide();
-    });
-
-
-   
+    });   
   })
 
-
-  hidden();
-  // console.log($("section[id^=my]"))
   
 
   
@@ -62,5 +56,8 @@ particlesJS.load('particles-js', 'js/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
   
+// $('#contact-me img').on('click', function() {
+//   window.location.href = 'https://www.linkedin.com/in/estrella-benites/';
+// });
 // });
 

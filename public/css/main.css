@@ -44,7 +44,7 @@ main .col-xs-12, footer .col-xs-12  {
 }
 
 .img-background {
-  background-color: rgb(124, 124, 124);
+  background-color: #1B3448;
   /* position: relative; */
   /* display: flex; */
   /* flex-direction: column; */
@@ -119,7 +119,7 @@ main .col-xs-12, footer .col-xs-12  {
 }
 
 .me-box {
-  background-color: green;
+  /* background-color: green; */
   /* height: 10vh; */
   padding: 3em;
   display: flex;
@@ -127,6 +127,13 @@ main .col-xs-12, footer .col-xs-12  {
   justify-content: center;
   align-items: center;
   width: 30vw;
+}
+
+.me-box:hover {
+  border-radius: 1px;
+  outline: solid 5px #fff;
+  transition: outline 0.9s linear;
+  margin: 0.5em;
 }
 
 .me-box svg {
@@ -152,6 +159,17 @@ main .col-xs-12, footer .col-xs-12  {
 #my-self, #my-skills, #tech-skills, #my-projects {
   padding-right: 3em;
 } 
+
+#contact-me {
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-me img{
+  width: 50%;
+}
 
 /* Soft Skills */
 
@@ -212,6 +230,9 @@ footer {
   padding: 2em;
 }
 
+footer p {
+  text-align: center;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 767px) {
   .menu a {
@@ -234,7 +255,7 @@ footer {
   }
 
   .img-background h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   .icon-tech-skill {
@@ -249,7 +270,7 @@ footer {
   }
 
   .img-background h1 {
-    font-size: 8rem;
+    /* font-size: 8rem; */
   }
 
   .icon-tech-skill {
