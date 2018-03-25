@@ -171,19 +171,28 @@ main .col-xs-12, footer .col-xs-12  {
   width: 50%;
 }
 
+/* About me */
+.my-info img {
+  width: 30%;
+  /* display: inline-block; */
+  float: left;
+  margin-right: 6%;
+}
 /* Soft Skills */
 
 /* Tech skills */
+#my-skills {
+  /* background-color: #113746; */
+  background-color: #6a6a6a;
+  height: 90vh;
+}
 
-#tech-skills {
-  background-color: #8a8f8a;
+#my-skills h3{
+  color: #fff;
 }
 
 h2, h3, h4, h4 {
   font-family: 'Sofia', cursive;
-}
-#tech-skills h3{
-  color: #fff;
 }
 
 .tech-skills-box {
@@ -195,8 +204,8 @@ h2, h3, h4, h4 {
 }
 
 .icon-tech-skill {
-  width: 26vw;
-  height: 21vh;
+  width: 18vw;
+  height: 14vh;
   display: inline-block;
   padding: 1em 0;
   /* outline: 1px solid green; */
@@ -206,10 +215,10 @@ h2, h3, h4, h4 {
 }
 
 .icon-tech-skill img {
-  height: 98px;
+  height: 62px;
   /* width: 100%; */
   background-color: #fff;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
 }
 /* Portfolio */
