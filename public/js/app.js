@@ -46,10 +46,7 @@ $(document).ready(function () {
 
   $("a[id^=menu]").on('click', function () {
     let attr = $(this).attr("data-name")
-    $('#' + attr).show().append(
-      `<div class="home-icon" >
-          <i class="fas fa-home"></i>
-        </div>`);
+    $('#' + attr).show();
     $('#main-box').hide();
     $('.home-icon').on('click', function () {
       $('#main-box').show();
