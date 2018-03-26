@@ -14,7 +14,12 @@ body{
   font-family: 'Sweet Hipster' !important;
 }
 
-
+.project-img a {
+  background-color: #1B3448;
+  padding: 0.4em;
+  border-radius: 5px;
+  color: #fff;
+}
 
 canvas {
   display: block;
@@ -158,6 +163,7 @@ main .col-xs-12, footer .col-xs-12  {
 
 #my-self, #my-skills, #tech-skills, #my-projects {
   padding-right: 3em;
+  height: 90vh;
 } 
 
 #contact-me {
@@ -254,6 +260,10 @@ footer p {
 
   .icon-tech-skill {
     width: 15vw;
+  }
+
+  .home-icon svg {
+    left: 13.7em;
   }
 }
 
