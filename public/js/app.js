@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  var $menuHome = $('#menu-home-container');
   const arrIconsTech = [
     'bootstrap.png',
     'materialize.png',
@@ -12,27 +12,74 @@ $(document).ready(function () {
     'git.png',
     'react.png'
   ]
-  // Evento para modificar el menú mientras se baja o sube el scroll
-  window.onscroll = function () {
-    // var scroll = window.scrollTop();
-    var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scroll > 170) {
-      console.log('supera a 170');
-    } else {
-      console.log('no 170');
-    }
-  };
 
-  // ocultando la info del menu
-  let hiddenContent = function () {
-    // $('.me-box p').hide();
-    $('#my-self').hide();
-    $('#my-skills').hide();
-    $('#tech-skills').hide();
-    $('#my-projects').hide();
+
+
+// Creando un clon del menu justo alado del original
+$('#menu-home-container').addClass('original').clone().insertAfter('#menu-home-container').addClass('cloned')
+.css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+
+scrollIntervalID = setInterval(stickIt, 10);
+
+
+function stickIt() {
+
+  var orgElementPos = $('.original').offset();
+  orgElementTop = orgElementPos.top;               
+
+  if ($(window).scrollTop() >= (orgElementTop)) {
+    // scrolled past the original position; now only show the cloned, sticky element.
+
+    // Cloned element should always have same left position and width as original element.     
+    orgElement = $('.original');
+    coordsOrgElement = orgElement.offset();
+    leftOrgElement = coordsOrgElement.left;  
+    widthOrgElement = orgElement.css('width');
+    $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+    $('.original').css('visibility','hidden');
+  } else {
+    // not scrolled past the menu; only show the original menu.
+    $('.cloned').hide();
+    $('.original').css('visibility','visible');
   }
+}
 
-  hiddenContent();
+
+
+
+
+
+
+
+
+  // // $menuHome.hide();
+  // $menuHome.css('visibility', 'hidden');
+
+  // // Evento para modificar el menú mientras se baja o sube el scroll
+  // window.onscroll = function () {
+  //   // var scroll = window.scrollTop();
+  //   var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+  //   console.log(scroll);
+  //   if (scroll > 640) {
+  //     // console.log('supera a 630');
+  //     $menuHome.css('visibility', 'visible');
+  //     $menuHome.addClass('menu-home');
+  //   } else {
+  //     console.log('no supera');
+  //     // $menuHome.hide();
+  //   }
+  // };
+
+  // // ocultando la info del menu
+  // let hiddenContent = function () {
+  //   // $('.me-box p').hide();
+  //   $('#my-self').hide();
+  //   $('#my-skills').hide();
+  //   $('#tech-skills').hide();
+  //   $('#my-projects').hide();
+  // }
+
+  // hiddenContent();
 
   let upWindow = function () {
     // var el = document.getElementsByTagName('body');
@@ -44,17 +91,24 @@ $(document).ready(function () {
     window.scrollTo(5, 0);
   }
 
-  $("a[id^=menu]").on('click', function () {
-    let attr = $(this).attr("data-name")
-    $('#' + attr).show();
-    $('#main-box').hide();
-    $('.home-icon').on('click', function () {
-      $('#main-box').show();
-      hiddenContent();
-      goToMenu();
-      $('.home-icon').hide();
-    });
-  });
+  // $("a[id^=menu]").on('click', function () {
+  //   let attr = $(this).attr("data-name")
+  //   $('#' + attr).show().prepend(
+  //     `<div class="menu-home" >
+  //         <a href="#main-box">home</a>
+  //         <a href="#my-projects">Portafolio</a>
+  //         <a href="#my-skills">Habilidades</a>
+  //         <a href="#my-self">Conóceme</a>
+  //         <a href="#my-contact-info">Contáctame</a>
+  //       </div>`);
+    // $('#main-box').hide();
+    // $('.home-icon').on('click', function () {
+    //   $('#main-box').show();
+    //   hiddenContent();
+    //   goToMenu();
+    //   $('.home-icon').hide();
+    // });
+  // });
 
   
     arrIconsTech.map(index => 
@@ -64,14 +118,7 @@ $(document).ready(function () {
         </div>`
       )
       // }
-    
-    
-    
   );
-
-
-
-
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS.load('particles-js', 'js/particles.json', function () {

@@ -21,6 +21,17 @@ body{
   font-family: 'Sweet Hipster' !important;
 }
 
+#menu-home-container {
+  background-color: #fff;
+  font-size: 1.6rem;
+  color: #113746;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.6em 0;
+  border-radius: 0 0 8px 8px;
+}
+
 .project-img a {
   background-color: #1B3448;
   padding: 0.4em;
@@ -72,7 +83,7 @@ main .col-xs-12, footer .col-xs-12  {
 .img-background {
   background-color: #1B3448;
   /* position: relative; */
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -91,11 +102,6 @@ main .col-xs-12, footer .col-xs-12  {
   /* top: 0; */
   /* width: 100vw; */
   padding-bottom: 1em;
-}
-
-.democlass{
-  color: blue;
-  font-size: 10rem;
 }
 
 .menu {
@@ -167,17 +173,15 @@ main .col-xs-12, footer .col-xs-12  {
   text-align: center;
 }
 
-.home-icon svg{
+/* .home-icon svg{
   font-size: 4rem;
   position: fixed;
   height: 100vh;
-  /* width: 160px; */
   z-index: 1;
   top: 0;
   left: 7.7em;
-  /* background-color: #111; */
   overflow-x: hidden;
-}
+} */
 
 #my-self, #my-skills, #tech-skills, #my-projects {
   /* height: 90vh; */
@@ -195,9 +199,10 @@ main .col-xs-12, footer .col-xs-12  {
 
 /* Tech skills */
 #my-skills {
-  /* background-color: #113746; */
-  background-color: #6a6a6a;
+  background-color: #113746;
   height: 90vh;
+  /* background-image: url(../assets/images/background-code.png); */
+  /* background-size: cover; */
 }
 
 #my-skills h3{
@@ -205,7 +210,8 @@ main .col-xs-12, footer .col-xs-12  {
 }
 
 h2, h3, h4, h4 {
-  font-family: 'Sofia', cursive;
+  /* font-family: 'Sofia', cursive; */
+  margin-bottom: 2em;
 }
 
 .tech-skills-box {
@@ -245,16 +251,32 @@ h2, h3, h4, h4 {
 
 figure.img-responsive.project-img {
   width: 70vw;
-  outline: 1px solid;
 }
 
 .project-img {
   margin-bottom: 4em;
 }
 
+.project-img figcaption {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
 .project-img img {
   width: 100%;
   height: 100%;
+}
+
+.project-img div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 0.5em;
+}
+
+.project-img div a {
+  width: 25%;
+  text-align: center;
 }
 
 /* Footer */
@@ -283,9 +305,9 @@ footer p {
     width: 15vw;
   }
 
-  .home-icon svg {
+  /* .home-icon svg {
     left: 13.7em;
-  }
+  } */
 }
 
 /* Medium devices (desktops, 992px and up) */
