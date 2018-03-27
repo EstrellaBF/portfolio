@@ -30,6 +30,11 @@ body{
   justify-content: space-around;
   padding: 0.6em 0;
   border-radius: 0 0 8px 8px;
+  margin-bottom: 3em;
+}
+
+#menu-home-container a {
+  color:#1B3448;
 }
 
 .project-img a {
@@ -37,6 +42,12 @@ body{
   padding: 0.4em;
   border-radius: 5px;
   color: #fff;
+}
+
+.project-img a:last-child {
+  background-color: #fff;
+  color: #1B3448;
+  border: 1px solid #1B3448;
 }
 
 canvas {
@@ -110,7 +121,7 @@ main .col-xs-12, footer .col-xs-12  {
   /* position: absolute; */
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  /* width: 100vw; */
   justify-content: space-evenly;
   margin-bottom: 3em;
   z-index: 99999;
@@ -185,6 +196,7 @@ main .col-xs-12, footer .col-xs-12  {
 
 #my-self, #my-skills, #tech-skills, #my-projects {
   /* height: 90vh; */
+  margin-top: 4.5em;
 } 
 
 
@@ -200,9 +212,10 @@ main .col-xs-12, footer .col-xs-12  {
 /* Tech skills */
 #my-skills {
   background-color: #113746;
-  height: 90vh;
+  /* height: 90vh; */
   /* background-image: url(../assets/images/background-code.png); */
   /* background-size: cover; */
+  padding: 4em 0;
 }
 
 #my-skills h3{
@@ -212,14 +225,18 @@ main .col-xs-12, footer .col-xs-12  {
 h2, h3, h4, h4 {
   /* font-family: 'Sofia', cursive; */
   margin-bottom: 2em;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .tech-skills-box {
-    /* display: flex; */
-    /* flex-direction: inherit; */
-    /* align-items: baseline; */
-    width: 100%;
-    text-align: center;
+  /* display: flex; */
+  /* flex-direction: inherit; */
+  /* align-items: baseline; */
+  width: 100%;
+  text-align: center;
 }
 
 .icon-tech-skill {
@@ -251,6 +268,7 @@ h2, h3, h4, h4 {
 
 figure.img-responsive.project-img {
   width: 70vw;
+  margin-bottom: 4em;
 }
 
 .project-img {
@@ -258,8 +276,10 @@ figure.img-responsive.project-img {
 }
 
 .project-img figcaption {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6em;
 }
 
 .project-img img {
@@ -279,6 +299,29 @@ figure.img-responsive.project-img {
   text-align: center;
 }
 
+/* Contact */
+
+.contact-box {
+  margin: 5em 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-box div {
+  color: #1B3448;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border: 1px solid #1B3448;
+  padding: 0.4em;
+  border-radius: 5px;
+  width: 40%;
+  text-align: center;
+}
+
+.contact-box div a {
+  color: #1B3448;
+}
+
 /* Footer */
 footer {
   background-color: #000;
@@ -293,12 +336,35 @@ footer p {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 767px) {
+  /* .container-fluid {
+    padding: 0 !important;
+  } */
+
+  #menu-home-container {
+    font-size: 2rem;
+  }
+
   .menu a{
     font-size: 2rem;
   }
 
+  #menu-home-container a {
+    color: #1B3448;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  figure.img-responsive.project-img {
+    width: 70vw;
+    margin-bottom: 7em;
+  }
+
   .img-background h1 {
     font-size: 5.5rem;
+  }
+  
+  .my-info {
+    margin: 7em 0;
   }
 
   .icon-tech-skill {
