@@ -31,6 +31,7 @@ body{
   padding: 0.6em 0;
   border-radius: 0 0 8px 8px;
   margin-bottom: 3em;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.15);
 }
 
 #menu-home-container a {
@@ -235,25 +236,28 @@ h2, h3, h4, h4 {
   /* display: flex; */
   /* flex-direction: inherit; */
   /* align-items: baseline; */
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 
 .icon-tech-skill {
-  width: 18vw;
-  height: 14vh;
+  width: 19%;
+  height: 70px;
   display: inline-block;
-  padding: 1em 0;
+  /* padding: 1em 0; */
   /* outline: 1px solid green; */
-  text-align: center;
+  /* text-align: center; */
   /* display: flex; */
-  margin: 0 0.5em;
+  /* margin: 0 0.5em; */
+  margin: 0.8em 0.5em;
+  /* outline: 1px solid red; */
+  /* flex-direction: row; */
 }
 
 .icon-tech-skill img {
-  height: 62px;
-  /* width: 100%; */
-  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  /* background-color: #fff; */
   /* border-radius: 10px; */
   box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
 }
@@ -322,6 +326,18 @@ figure.img-responsive.project-img {
   color: #1B3448;
 }
 
+#my-contact-info {
+  background-color: #113746;
+  margin: 7em 0 0 0;
+  padding: 3em 0;
+}
+
+.contact-info-container {
+  background-color: #fff;
+  padding: 1px 0;
+  border-radius: 10px;
+}
+
 /* Footer */
 footer {
   background-color: #000;
@@ -334,6 +350,12 @@ footer {
 footer p {
   text-align: center;
 }
+@media (min-width:575px) {
+  .icon-tech-skill {
+    height: 115px;
+  }
+} 
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 767px) {
   /* .container-fluid {
@@ -378,6 +400,22 @@ footer p {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 991px) {
+  figure.img-responsive.project-img {
+    width: 28%;
+    margin-bottom: 7em;
+    height: 22em;
+  }
+
+  .projects-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em 0;
+  }
+
+
+
   .menu a {
     font-size: 2.3rem;
   }
@@ -387,7 +425,12 @@ footer p {
   }
 
   .icon-tech-skill {
-    width: 10vw;
+    margin: 0.8em 1.5em;
+    width: 12vw;
+  }
+
+  #my-skills {
+    padding: 7em 0;
   }
  }
 
@@ -402,9 +445,40 @@ footer p {
   }
 
   .icon-tech-skill {
-    width: 10vw;
-    height: 35vh;
+    width: 7vw;
+    height: 15vh;
   }
+
+  figure.img-responsive.project-img {
+    width: 28%;
+    margin-bottom: 7em;
+    height: 25em;
+  }
+
+  .projects-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em 0;
+  }
+
+  #my-self, #my-skills, #tech-skills, #my-projects {
+    /* height: 90vh; */
+    margin-top: 7em;
+  }
+
+  .contact-box div {
+    color: #1B3448;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border: 1px solid #1B3448;
+    padding: 0.6em;
+    border-radius: 5px;
+    width: 16%;
+    text-align: center;
+  }
+
 }
 
 
