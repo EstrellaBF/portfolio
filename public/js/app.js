@@ -51,21 +51,23 @@ function stickIt() {
 
 
 
-
+  //   $('.cloned').hide();
+  //   $('.original').hide();
   // // $menuHome.hide();
-  // $menuHome.css('visibility', 'hidden');
+  // // $menuHome.css('visibility', 'hidden');
 
   // // Evento para modificar el menú mientras se baja o sube el scroll
   // window.onscroll = function () {
   //   // var scroll = window.scrollTop();
   //   var scroll = document.documentElement.scrollTop || document.body.scrollTop;
   //   console.log(scroll);
-  //   if (scroll > 640) {
-  //     // console.log('supera a 630');
-  //     $menuHome.css('visibility', 'visible');
-  //     $menuHome.addClass('menu-home');
+  //   if (scroll > 770) {
+  //     console.log('supera a 770');
+  //     $('.original').show();
+  //     // $menuHome.hide();
   //   } else {
   //     console.log('no supera');
+  //   $('.original').hide();
   //     // $menuHome.hide();
   //   }
   // };

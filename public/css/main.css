@@ -334,7 +334,7 @@ figure.img-responsive.project-img {
 
 .contact-info-container {
   background-color: #fff;
-  padding: 1px 0;
+  padding: 1em;
   border-radius: 10px;
 }
 
@@ -392,7 +392,9 @@ footer p {
   .icon-tech-skill {
     width: 15vw;
   }
-
+  .text-center p {
+    font-size: 1.7rem;
+  }
   /* .home-icon svg {
     left: 13.7em;
   } */
@@ -432,6 +434,11 @@ footer p {
   #my-skills {
     padding: 7em 0;
   }
+
+  .text-center p {
+    font-size: 1.7rem;
+  }
+
  }
 
  /* Large devices (large desktops, 1200px and up) */
@@ -479,6 +486,16 @@ footer p {
     text-align: center;
   }
 
+  .text-center p {
+    font-size: 2rem;
+  }
+
+  .my-info img {
+    width: 20%;
+    /* display: inline-block; */
+    float: left;
+    margin-right: 6%;
+  }
 }
 
 
