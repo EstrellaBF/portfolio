@@ -39,11 +39,8 @@ $(document).ready(function () {
       widthOrgElement = orgElement.css('width');
 
       $('.cloned').css({'left': leftOrgElement + 'px', 'width': widthOrgElement,'top': 0, "box-shadow":"0px 0px 4px 1px rgba(0, 0, 0, 0.15)"})
-      .show().find("a").css("color","#113746");
-      $('.original').css('visibility', 'hidden').find('a').css({
-        // "display": "none",
-        // "border": "none",
-      });
+      .show();
+      $('.original').css('visibility', 'hidden');
     } else {
       // not scrolled past the menu; only show the original menu.
       $('.cloned').hide();
