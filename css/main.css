@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Sweet Hipster' !important; }
+
+h2, h3, h4, h4 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+#my-skills, #tech-skills, #my-projects {
+  /* height: 90vh; */
+  padding: 4.5em 0; }
+
+#menu-home-container {
+  background-color: #fff;
+  font-size: 1.6rem;
+  color: #072139;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.6em 0;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 3em; }
+
+#menu-home-container a {
+  color: #072139; }
+
+canvas {
+  display: block;
+  vertical-align: bottom; }
+
+/* MAIN MENU */
+#contact-me {
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: initial;
+  justify-content: inherit; }
+  #contact-me #contact-me img {
+    width: 50%; }
+  #contact-me #contact-me a {
+    text-align: center;
+    width: 30%; }
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/* Main background and menu */
+.background-box {
+  background-color: #072139;
+  /* position: relative; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 4em 0; }
+  .background-box h1 {
+    color: #fff;
+    font-family: 'Sacramento', cursive;
+    font-size: 4.5rem;
+    margin: 0;
+    /* position: absolute; */
+    text-align: center;
+    padding-bottom: 1em; }
+
+.menu {
+  /* top: 0; */
+  color: #fff;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 3em;
+  z-index: 99999; }
+  .menu a {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 200;
+    text-decoration: none;
+    /* -webkit-transition: font-size 0.5s; Esto es para el hover */ }
+  .menu .me-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 30vw; */ }
+    .menu .me-box svg {
+      font-size: 4.5rem; }
+    .menu .me-box p {
+      font-size: 1.5rem;
+      text-align: center; }
+
+/* ABOUT ME */
+.my-info {
+  margin-bottom: 4.5em; }
+  .my-info img {
+    width: 30%;
+    /* display: inline-block; */
+    float: left;
+    margin-right: 6%; }
+
+/* TECH SKILLS */
+#my-skills {
+  background-color: #072139;
+  /* height: 90vh; */
+  /* background-image: url(../assets/images/background-code.png); */
+  /* background-size: cover; */ }
+  #my-skills h3 {
+    color: #fff; }
+  #my-skills .tech-skills-box {
+    text-align: center; }
+  #my-skills .icon-tech-skill {
+    margin: 0.8em 0.5em;
+    margin: 0.8em 0.5em;
+    float: left;
+    width: 6em;
+    height: 6em; }
+    #my-skills .icon-tech-skill img {
+      height: 100%;
+      width: 100%;
+      box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19); }
+
+/* PORTFOLIO */
+.project-img {
+  margin-bottom: 4em; }
+  .project-img figcaption {
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6em; }
+  .project-img div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0.5em; }
+    .project-img div a {
+      background-color: #1B3448;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-align: center;
+      padding: 0.6em 0.4em;
+      width: 25%; }
+    .project-img div a:last-child {
+      background-color: #fff;
+      color: #1B3448;
+      border: 1px solid #1B3448; }
+
+/* CONTACT */
+#my-contact-info {
+  background-color: #113746;
+  padding: 3em 0; }
+
+.contact-info-container {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px; }
+  .contact-info-container .contact-box {
+    margin: 5em 0;
+    display: flex;
+    justify-content: space-evenly; }
+    .contact-info-container .contact-box div {
+      color: #1B3448;
+      font-size: 1.7rem;
+      font-weight: 500;
+      border: 1px solid #1B3448;
+      padding: 0.4em 0;
+      border-radius: 5px;
+      width: 35%;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0.3em; }
+      .contact-info-container .contact-box div a {
+        color: #1B3448;
+        font-size: 1.3rem;
+        margin-left: 0.6em; }
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 10vh;
+  /* margin-top: 4em; */
+  display: flex;
+  align-items: center; }
+  footer p {
+    text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
