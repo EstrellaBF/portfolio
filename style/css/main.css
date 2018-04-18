@@ -8,18 +8,26 @@ body {
   font-family: 'Sweet Hipster' !important; }
 
 h2, h3, h4, h4 {
+  font-size: 3.2rem;
+  font-family: 'Comfortaa', serif;
+  font-weight: 700;
+  text-align: center; }
+
+hr {
+  border: 3px solid #4bceb4;
+  border-radius: 4em;
+  height: 0px;
   text-align: center;
-  font-size: 3rem;
-  text-transform: uppercase; }
+  margin-top: 0; }
 
 #my-skills, #tech-skills, #my-projects {
   /* height: 90vh; */
-  padding: 4.5em 0; }
+  padding: 3em 0; }
 
 #menu-home-container {
   background-color: #fff;
   font-size: 1.6rem;
-  color: #072139;
+  color: #002E5E;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -28,7 +36,8 @@ h2, h3, h4, h4 {
   margin-bottom: 3em; }
 
 #menu-home-container a {
-  color: #072139; }
+  color: #002E5E;
+  font-size: 1.7rem; }
 
 canvas {
   display: block;
@@ -57,7 +66,7 @@ canvas {
 
 /* Main background and menu */
 .background-box {
-  background-color: #072139;
+  background-color: #002E5E;
   /* position: relative; */
   height: 100vh;
   display: flex;
@@ -69,14 +78,11 @@ canvas {
     font-family: 'Sacramento', cursive;
     font-size: 4.5rem;
     margin: 0;
-    /* position: absolute; */
     text-align: center;
     padding-bottom: 1em; }
 
 .menu {
-  /* top: 0; */
   color: #fff;
-  /* position: absolute; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -89,10 +95,10 @@ canvas {
     text-decoration: none;
     /* -webkit-transition: font-size 0.5s; Esto es para el hover */ }
   .menu .me-box {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     /* width: 30vw; */ }
     .menu .me-box svg {
       font-size: 4.5rem; }
@@ -102,7 +108,12 @@ canvas {
 
 /* ABOUT ME */
 .my-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 4.5em; }
+  .my-info hr {
+    width: 35%; }
   .my-info img {
     width: 30%;
     /* display: inline-block; */
@@ -111,32 +122,42 @@ canvas {
 
 /* TECH SKILLS */
 #my-skills {
-  background-color: #072139;
-  /* height: 90vh; */
-  /* background-image: url(../assets/images/background-code.png); */
-  /* background-size: cover; */ }
-  #my-skills h3 {
-    color: #fff; }
+  background-color: #002E5E; }
+  #my-skills .info-tech-skills {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+    #my-skills .info-tech-skills h3 {
+      color: #fff; }
+    #my-skills .info-tech-skills hr {
+      width: 70%; }
   #my-skills .tech-skills-box {
     text-align: center; }
   #my-skills .icon-tech-skill {
-    margin: 0.8em 0.5em;
-    margin: 0.8em 0.5em;
-    float: left;
-    width: 6em;
-    height: 6em; }
+    display: inline-block;
+    height: 6em;
+    margin: 0.8em 0.5em 3em 0.5em;
+    width: 6em; }
     #my-skills .icon-tech-skill img {
+      box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
       height: 100%;
-      width: 100%;
-      box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19); }
+      width: 100%; }
+    #my-skills .icon-tech-skill figcaption {
+      color: #fff; }
 
 /* PORTFOLIO */
+.project-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  .project-title hr {
+    width: 37%; }
+
 .project-img {
   margin-bottom: 4em; }
   .project-img figcaption {
-    font-weight: 600;
     font-size: 2.5rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-bottom: 0.6em; }
   .project-img div {
     display: flex;
@@ -144,7 +165,7 @@ canvas {
     justify-content: space-around;
     padding-top: 0.5em; }
     .project-img div a {
-      background-color: #1B3448;
+      background-color: #245d88;
       border-radius: 5px;
       color: #fff;
       font-size: 1.5rem;
@@ -154,12 +175,12 @@ canvas {
       width: 25%; }
     .project-img div a:last-child {
       background-color: #fff;
-      color: #1B3448;
-      border: 1px solid #1B3448; }
+      color: #245d88;
+      border: 1px solid #245d88; }
 
 /* CONTACT */
 #my-contact-info {
-  background-color: #113746;
+  background-color: #002E5E;
   padding: 3em 0; }
 
 .contact-info-container {
@@ -171,10 +192,10 @@ canvas {
     display: flex;
     justify-content: space-evenly; }
     .contact-info-container .contact-box div {
-      color: #1B3448;
+      color: #002E5E;
       font-size: 1.7rem;
       font-weight: 500;
-      border: 1px solid #1B3448;
+      border: 1px solid #002E5E;
       padding: 0.4em 0;
       border-radius: 5px;
       width: 35%;
@@ -185,7 +206,7 @@ canvas {
       align-items: center;
       margin: 0 0.3em; }
       .contact-info-container .contact-box div a {
-        color: #1B3448;
+        color: #002E5E;
         font-size: 1.3rem;
         margin-left: 0.6em; }
 

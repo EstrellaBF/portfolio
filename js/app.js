@@ -1,15 +1,15 @@
 $(document).ready(function () {
   var $menuHome = $('#menu-home-container');
   const arrIconsTech = [
-    'jquery.png',
-    'firebase.png',
-    'js.png',
-    'node.png',
-    'git.png',
-    'react.png',
-    'redux.png',
-    'sass.png',
-    'gulp.png'
+    'Jquery',
+    'Firebase',
+    'Javascript',
+    'Node Js',
+    'Git',
+    'React',
+    'Redux',
+    'Sass',
+    'Gulp'
   ]
 
   // Creando un clon del menu justo alado del original
@@ -59,12 +59,12 @@ $(document).ready(function () {
 
 // Adding icons
   arrIconsTech.map(index =>
-    $('#tech-skills-box').append(
-      `<div class="icon-tech-skill">
-          <img src="${'assets/images/' + index}"class="img-responsive">
-        </div>`
+    $('.tech-skills-box').append(
+      `<figure class="icon-tech-skill">
+          <img src="${'assets/images/' + index + '.png'}" class="img-responsive">
+          <figcaption>${index}</figcaption>
+        </figure>`
     )
-    // }
   );
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
