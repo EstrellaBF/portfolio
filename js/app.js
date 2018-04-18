@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   // Creando un clon del menu justo alado del original
   $('#menu-home-container').addClass('original').clone().insertAfter('#menu-home-container').addClass('cloned')
-    .css('position', 'fixed').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
+    .css('position', 'fixed').css('top', '0').css('margin-top', '-1px').css('z-index', '500').removeClass('original').hide();
 
   scrollIntervalID = setInterval(stickIt, 10);
 
@@ -71,6 +71,11 @@ $(document).ready(function () {
   particlesJS.load('particles-js', 'js/particles.json', function () {
     // console.log('callback - particles.js config loaded');
   });
+
+  $('#wpp').on('click', function(){
+        window.location.href = "https://api.whatsapp.com/send?phone=51971313111&text=I'm%20interested%20in%20your%20portfolio";
+
+  })
 
 });
 

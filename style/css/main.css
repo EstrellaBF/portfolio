@@ -24,6 +24,9 @@ hr {
   /* height: 90vh; */
   padding: 3em 0; }
 
+.my-info-title, .info-tech-skills, .project-title {
+  margin-bottom: 2em; }
+
 #menu-home-container {
   background-color: #fff;
   font-size: 1.6rem;
@@ -32,8 +35,7 @@ hr {
   flex-direction: row;
   justify-content: space-around;
   padding: 0.6em 0;
-  border-radius: 0 0 8px 8px;
-  margin-bottom: 3em; }
+  border-radius: 0 0 8px 8px; }
 
 #menu-home-container a {
   color: #002E5E;
@@ -107,14 +109,15 @@ canvas {
       text-align: center; }
 
 /* ABOUT ME */
-.my-info {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 4.5em; }
-  .my-info hr {
-    width: 35%; }
-  .my-info img {
+#my-self {
+  padding-bottom: 3em; }
+  #my-self .my-info .my-info-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+    #my-self .my-info .my-info-title hr {
+      width: 35%; }
+  #my-self .my-info img {
     width: 30%;
     /* display: inline-block; */
     float: left;

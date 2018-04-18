@@ -25,7 +25,7 @@ h2, h3, h4, h4 {
 }
 
 hr{
-  border: 3px solid #4bceb4;
+  border: 3px solid $color-verde;
   border-radius: 4em;
   height: 0px;
   text-align: center;
@@ -37,6 +37,10 @@ hr{
   padding: 3em 0;
 }
 
+.my-info-title, .info-tech-skills, .project-title {
+  margin-bottom: 2em;
+}
+
 #menu-home-container {
   background-color: #fff;
   font-size: 1.6rem;
@@ -46,7 +50,7 @@ hr{
   justify-content: space-around;
   padding: 0.6em 0;
   border-radius: 0 0 8px 8px;
-  margin-bottom: 3em;
+  // margin-bottom: 3em;
   // box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.15);
 }
 
@@ -144,22 +148,26 @@ canvas {
 
 
 /* ABOUT ME */
-.my-info {
- align-items: center;
- display: flex;
- flex-direction: column;
- margin-bottom: 4.5em;
- hr{
-  width: 35%;
- }
-  img {
-    width: 30%;
-    /* display: inline-block; */
-    float: left;
-    margin-right: 6%;
+#my-self {
+  padding-bottom: 3em;
+  .my-info {
+    .my-info-title {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      hr{
+        width: 35%;
+      }  
+    }
+
+    img {
+      width: 30%;
+      /* display: inline-block; */
+      float: left;
+      margin-right: 6%;
+    }
   }
 }
-
 
 /* TECH SKILLS */
 #my-skills {
