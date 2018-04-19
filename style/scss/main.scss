@@ -229,7 +229,7 @@ canvas {
     margin-bottom: 0.6em;
   }
   img {
-    border-radius: 0.7em;
+    // border-radius: 0.7em;
   }
   div {
     display: flex;
@@ -261,7 +261,7 @@ canvas {
 
 
 #my-contact-info {
-  background-color: $color-azul-oscuro;
+  // background-color: $color-azul-oscuro;
   // margin: 7em 0 0 0;
   padding: 3em 0;
   .contact-info-title {}
@@ -277,20 +277,23 @@ canvas {
         color: $color-azul-oscuro;
         font-size: 1.7rem;
         font-weight: 500;
-        border: 1px solid $color-azul-oscuro;
+        // border: 1px solid $color-azul-oscuro;
         padding: 0.4em 0;
         border-radius: 5px;
         width: 35%;
         text-align: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0 0.3em;
         a {
           color: $color-azul-oscuro;
           font-size: 1.3rem;
-          margin-left: 0.6em;
+          margin-top: 0.6em;
+        }
+        svg {
+          font-size: 4rem;
         }
       }
     }
@@ -425,6 +428,13 @@ footer {
   }
 
   // SKILLS
+  #my-skills {
+    .icon-tech-skill {
+      margin: 0.8em 2.7em 6em;
+      height: 5em;
+      width: 5em;
+    }
+  }
 
 
 }

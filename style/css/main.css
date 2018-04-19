@@ -166,8 +166,6 @@ canvas {
     font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 0.6em; }
-  .project-img img {
-    border-radius: 0.7em; }
   .project-img div {
     display: flex;
     flex-direction: row;
@@ -190,7 +188,6 @@ canvas {
 
 /* CONTACT */
 #my-contact-info {
-  background-color: #002E5E;
   padding: 3em 0; }
   #my-contact-info .contact-info-container {
     background-color: #fff;
@@ -204,20 +201,21 @@ canvas {
         color: #002E5E;
         font-size: 1.7rem;
         font-weight: 500;
-        border: 1px solid #002E5E;
         padding: 0.4em 0;
         border-radius: 5px;
         width: 35%;
         text-align: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0 0.3em; }
         #my-contact-info .contact-info-container .contact-box div a {
           color: #002E5E;
           font-size: 1.3rem;
-          margin-left: 0.6em; }
+          margin-top: 0.6em; }
+        #my-contact-info .contact-info-container .contact-box div svg {
+          font-size: 4rem; }
 
 /* FOOTER */
 footer {
@@ -271,6 +269,11 @@ footer {
   .menu .me-box svg {
     font-size: 5.8rem; }
   .menu .me-box p {
-    font-size: 2.1rem; } }
+    font-size: 2.1rem; }
+
+  #my-skills .icon-tech-skill {
+    margin: 0.8em 2.7em 6em;
+    height: 5em;
+    width: 5em; } }
 
 /*# sourceMappingURL=main.css.map */
