@@ -1,15 +1,15 @@
 $(document).ready(function () {
   var $menuHome = $('#menu-home-container');
   const arrIconsTech = [
-    'Jquery',
-    'Firebase',
-    'Javascript',
-    'Node Js',
-    'Git',
-    'React',
-    'Redux',
-    'Sass',
-    'Gulp'
+    'jquery',
+    'firebase',
+    'javascript',
+    'node js',
+    'git',
+    'react',
+    'redux',
+    'sass',
+    'gulp'
   ]
 
   // Creando un clon del menu justo alado del original
