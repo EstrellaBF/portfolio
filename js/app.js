@@ -46,6 +46,7 @@ $(document).ready(function () {
       $('.original').css('visibility', 'visible');
     }
   }
+  
 // 
   let upWindow = function () {
     // var el = document.getElementsByTagName('body');
