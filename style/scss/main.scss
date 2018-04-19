@@ -14,8 +14,11 @@ body{
   font-family: 'Sweet Hipster' !important;
 }
 
+
+
+
 h2, h3, h4, h4 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-family: 'Comfortaa', serif;
   font-weight: 700;
   // margin-bottom: 0;
@@ -149,17 +152,16 @@ canvas {
 
 /* ABOUT ME */
 #my-self {
-  padding-bottom: 3em;
+  padding-bottom: 3em;  
+  .my-info-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    hr{
+      width: 35%;
+    }  
+  }
   .my-info {
-    .my-info-title {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      hr{
-        width: 35%;
-      }  
-    }
-
     img {
       width: 30%;
       /* display: inline-block; */
@@ -190,9 +192,9 @@ canvas {
 
   .icon-tech-skill {
     display: inline-block;
-    height: 6em;
-    margin: 0.8em 0.5em 3em 0.5em;
-    width: 6em;
+    height: 5em;
+    margin: 0.8em 1.3em 3em;
+    width: 5em;
     img {
       box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
       height: 100%;
@@ -205,7 +207,7 @@ canvas {
 }
 
 
-/* PORTFOLIO */
+/* PROJECTS */
 .project-title {
   align-items: center;
   display: flex;
@@ -215,6 +217,10 @@ canvas {
   }
 }
 .project-img {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 4em;
   figcaption {
     // font-weight: 600;
@@ -222,11 +228,15 @@ canvas {
     text-transform: capitalize;
     margin-bottom: 0.6em;
   }
+  img {
+    border-radius: 0.7em;
+  }
   div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 0.5em;
+    width: 100%;
     a {
       background-color: $color-azul;
       border-radius: 5px;
@@ -254,39 +264,38 @@ canvas {
   background-color: $color-azul-oscuro;
   // margin: 7em 0 0 0;
   padding: 3em 0;
-}
-
-.contact-info-container {
-  background-color: #fff;
-  padding: 1em;
-  border-radius: 10px;
-  .contact-box {
-    margin: 5em 0;
-    display: flex;
-    justify-content: space-evenly;
-    div {
-      color: $color-azul-oscuro;
-      font-size: 1.7rem;
-      font-weight: 500;
-      border: 1px solid $color-azul-oscuro;
-      padding: 0.4em 0;
-      border-radius: 5px;
-      width: 35%;
-      text-align: center;
+  .contact-info-title {}
+  .contact-info-container {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    .contact-box {
+      margin: 5em 0;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      margin: 0 0.3em;
-      a {
+      justify-content: space-evenly;
+      div {
         color: $color-azul-oscuro;
-        font-size: 1.3rem;
-        margin-left: 0.6em;
+        font-size: 1.7rem;
+        font-weight: 500;
+        border: 1px solid $color-azul-oscuro;
+        padding: 0.4em 0;
+        border-radius: 5px;
+        width: 35%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.3em;
+        a {
+          color: $color-azul-oscuro;
+          font-size: 1.3rem;
+          margin-left: 0.6em;
+        }
       }
     }
   }
 }
-
 
 /* FOOTER */
 
@@ -303,97 +312,122 @@ footer {
   }
 }
 
-// footer 
-// @media (min-width:575px) {
-//   .icon-tech-skill {
-//     height: 115px;
-//   }
-// } 
+@media (min-width:575px) {
 
-// /* Small devices (tablets, 768px and up) */
-// @media (min-width: 767px) {
-//   /* .container-fluid {
-//     padding: 0 !important;
-//   } */
+  // MAIN MENU
+  .menu {
+    .me-box {
+      p {
+        font-size: 1.9rem;
+      }
+    }
+  }
 
-//   #menu-home-container {
-//     font-size: 2rem;
-//   }
+  // ABOUT ME
+  #my-self {
+    .my-info-title {
+      hr {
+        width: 19%;
+      }
+    }
+  }
 
-//   .menu a{
-//     font-size: 2rem;
-//   }
+  // MY SKILLS
+  #my-skills {
+    .info-tech-skills {
+      hr {
+        width: 37%;
+      }
+    }
+    .icon-tech-skill {
+      display: inline-block;
+      height: 5.5em;
+      margin: 0.8em 1.7em 3em;
+      width: 5.5em;
+    }
+  }
 
-//   #menu-home-container a {
-//     color: #1B3448;
-//     font-weight: 500;
-//     font-size: 2rem;
-//   }
+  // PROJECTS
+  #my-projects {
+    .project-title {
+      hr {
+        width: 19%;
+      }
+    }
+    .project-img {
+      img {
+        height: 15em;
+      }
+      a {
+        font-size: 1.3rem;
+      }
+      a:last-child {
+        font-size: 1.3rem;
+      }
+    }
+  }
+} 
 
-//   figure.img-responsive.project-img {
-//     width: 70vw;
-//     margin-bottom: 7em;
-//   }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 767px) {
 
-//   .background-box h1 {
-//     font-size: 5.5rem;
-//   }
-  
-//   .my-info {
-//     margin: 7em 0;
-//   }
+  // MAIN MENU
+  .background-box {
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
 
-//   .icon-tech-skill {
-//     width: 15vw;
-//   }
-//   .text-center p {
-//     font-size: 1.7rem;
-//   }
-//   /* .home-icon svg {
-//     left: 13.7em;
-//   } */
-// }
+  // ABOUT ME
+  #my-self {
+    .my-info-title {
+      hr {
+        width: 15%;
+      }
+    }
+  }
 
-// /* Medium devices (desktops, 992px and up) */
-// @media (min-width: 991px) {
-//   figure.img-responsive.project-img {
-//     width: 28%;
-//     margin-bottom: 7em;
-//     height: 22em;
-//   }
+  // TECH
+  #my-skills {
+    .info-tech-skills {
+      // width: 30%;
+    }
+  }
 
-//   .projects-box {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: space-between;
-//     margin: 2em 0;
-//   }
+  // PROYECTOS
+  #my-projects {
+    .project-title {
+      hr {
+        width: 16%;
+      }
+    }
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 991px) {
+  // MAIN MENU
+  .background-box {
+    h1 {
+      font-size: 7rem;
+    }
+  }
+  .menu {
+    .me-box {
+      svg {
+        font-size: 5.8rem;
+      }
+      p {
+        font-size: 2.1rem;
+      }
+    }
+  }
+
+  // SKILLS
 
 
-
-//   .menu a {
-//     font-size: 2.3rem;
-//   }
-
-//   .background-box h1 {
-//     font-size: 6rem;
-//   }
-
-//   .icon-tech-skill {
-//     margin: 0.8em 1.5em;
-//     width: 12vw;
-//   }
-
-//   #my-skills {
-//     padding: 7em 0;
-//   }
-
-//   .text-center p {
-//     font-size: 1.7rem;
-//   }
-
-//  }
+}
 
 //  /* Large devices (large desktops, 1200px and up) */
 // @media (min-width: 1199px) {

@@ -8,7 +8,7 @@ body {
   font-family: 'Sweet Hipster' !important; }
 
 h2, h3, h4, h4 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-family: 'Comfortaa', serif;
   font-weight: 700;
   text-align: center; }
@@ -111,11 +111,11 @@ canvas {
 /* ABOUT ME */
 #my-self {
   padding-bottom: 3em; }
-  #my-self .my-info .my-info-title {
+  #my-self .my-info-title {
     align-items: center;
     display: flex;
     flex-direction: column; }
-    #my-self .my-info .my-info-title hr {
+    #my-self .my-info-title hr {
       width: 35%; }
   #my-self .my-info img {
     width: 30%;
@@ -138,9 +138,9 @@ canvas {
     text-align: center; }
   #my-skills .icon-tech-skill {
     display: inline-block;
-    height: 6em;
-    margin: 0.8em 0.5em 3em 0.5em;
-    width: 6em; }
+    height: 5em;
+    margin: 0.8em 1.3em 3em;
+    width: 5em; }
     #my-skills .icon-tech-skill img {
       box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
       height: 100%;
@@ -148,7 +148,7 @@ canvas {
     #my-skills .icon-tech-skill figcaption {
       color: #fff; }
 
-/* PORTFOLIO */
+/* PROJECTS */
 .project-title {
   align-items: center;
   display: flex;
@@ -157,16 +157,23 @@ canvas {
     width: 37%; }
 
 .project-img {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 4em; }
   .project-img figcaption {
     font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 0.6em; }
+  .project-img img {
+    border-radius: 0.7em; }
   .project-img div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 0.5em; }
+    padding-top: 0.5em;
+    width: 100%; }
     .project-img div a {
       background-color: #245d88;
       border-radius: 5px;
@@ -185,33 +192,32 @@ canvas {
 #my-contact-info {
   background-color: #002E5E;
   padding: 3em 0; }
-
-.contact-info-container {
-  background-color: #fff;
-  padding: 1em;
-  border-radius: 10px; }
-  .contact-info-container .contact-box {
-    margin: 5em 0;
-    display: flex;
-    justify-content: space-evenly; }
-    .contact-info-container .contact-box div {
-      color: #002E5E;
-      font-size: 1.7rem;
-      font-weight: 500;
-      border: 1px solid #002E5E;
-      padding: 0.4em 0;
-      border-radius: 5px;
-      width: 35%;
-      text-align: center;
+  #my-contact-info .contact-info-container {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px; }
+    #my-contact-info .contact-info-container .contact-box {
+      margin: 5em 0;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      margin: 0 0.3em; }
-      .contact-info-container .contact-box div a {
+      justify-content: space-evenly; }
+      #my-contact-info .contact-info-container .contact-box div {
         color: #002E5E;
-        font-size: 1.3rem;
-        margin-left: 0.6em; }
+        font-size: 1.7rem;
+        font-weight: 500;
+        border: 1px solid #002E5E;
+        padding: 0.4em 0;
+        border-radius: 5px;
+        width: 35%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.3em; }
+        #my-contact-info .contact-info-container .contact-box div a {
+          color: #002E5E;
+          font-size: 1.3rem;
+          margin-left: 0.6em; }
 
 /* FOOTER */
 footer {
@@ -223,5 +229,48 @@ footer {
   align-items: center; }
   footer p {
     text-align: center; }
+
+@media (min-width: 575px) {
+  .menu .me-box p {
+    font-size: 1.9rem; }
+
+  #my-self .my-info-title hr {
+    width: 19%; }
+
+  #my-skills .info-tech-skills hr {
+    width: 37%; }
+  #my-skills .icon-tech-skill {
+    display: inline-block;
+    height: 5.5em;
+    margin: 0.8em 1.7em 3em;
+    width: 5.5em; }
+
+  #my-projects .project-title hr {
+    width: 19%; }
+  #my-projects .project-img img {
+    height: 15em; }
+  #my-projects .project-img a {
+    font-size: 1.3rem; }
+  #my-projects .project-img a:last-child {
+    font-size: 1.3rem; } }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 767px) {
+  .background-box h1 {
+    font-size: 5.5rem; }
+
+  #my-self .my-info-title hr {
+    width: 15%; }
+
+  #my-projects .project-title hr {
+    width: 16%; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 991px) {
+  .background-box h1 {
+    font-size: 7rem; }
+
+  .menu .me-box svg {
+    font-size: 5.8rem; }
+  .menu .me-box p {
+    font-size: 2.1rem; } }
 
 /*# sourceMappingURL=main.css.map */
