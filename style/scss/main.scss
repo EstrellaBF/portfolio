@@ -9,13 +9,11 @@ $color-azul-oscuro: #002E5E;
 $color-azul : #245d88;
 $color-azul-claro : #0C8CE8;
 $color-verde: #4bceb4;
+$color-gris : #808080;
 
 body{
   font-family: 'Sweet Hipster' !important;
 }
-
-
-
 
 h2, h3, h4, h4 {
   font-size: 2.5rem;
@@ -47,7 +45,7 @@ hr{
 #menu-home-container {
   background-color: #fff;
   font-size: 1.6rem;
-  color: $color-azul-oscuro;
+  // color: $color-azul-oscuro;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -58,9 +56,9 @@ hr{
 }
 
 #menu-home-container a {
-  color:$color-azul-oscuro;
-  // font-weight: 500;
-  font-size: 1.7rem;
+  color: $color-gris;
+  font-weight: 100;
+  font-size: 1.8rem;
 }
 
 canvas {
@@ -192,18 +190,48 @@ canvas {
 
   .icon-tech-skill {
     display: inline-block;
-    height: 5em;
-    margin: 0.8em 1.3em 3em;
-    width: 5em;
+    height: 7em;
+    margin: 0.8em 2em 3em;
+    position: relative;
+    width: 7em;
     img {
       box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
       height: 100%;
       width: 100%;
     }
-    figcaption {
+    p {
       color: #fff;
-      text-transform: capitalize
+      display: contents;
+      text-transform: capitalize;
+      position: absolute;
     }
+    figcaption {
+      background-color: rgba(0, 0, 0, 0.315);
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 100;
+      // text-transform: capitalize;
+      height: 100%;
+      // left: 0;
+      // line-height: 5.5em;
+      text-align: center;
+      top: 0;
+      transition: all .23s ease;
+      opacity: 0;
+      position: absolute;
+      visibility: hidden;
+      width: 100%;
+      // overflow: hidden;
+    }
+  }  
+  .icon-tech-skill:hover>figcaption {
+    font-weight: 500;
+    opacity: 5;
+    visibility: visible;
+    width: 100%;
+  } 
+  .icon-tech-skill:hover>p {
+    visibility: hidden;
   }
 }
 
@@ -262,20 +290,24 @@ canvas {
 
 
 #my-contact-info {
-  // background-color: $color-azul-oscuro;
+  background-color: $color-verde;
   // margin: 7em 0 0 0;
   padding: 3em 0;
-  .contact-info-title {}
+  .contact-info-title {
+    h2, p {
+      color: #fff;
+    }
+  }
   .contact-info-container {
     background-color: #fff;
     padding: 1em;
     border-radius: 10px;
-    .contact-box {
+    .contact-box-icons {
       margin: 5em 0;
       display: flex;
       justify-content: space-evenly;
       div {
-        color: $color-azul-oscuro;
+        color: $color-gris;
         font-size: 1.7rem;
         font-weight: 500;
         // border: 1px solid $color-azul-oscuro;
@@ -289,13 +321,29 @@ canvas {
         align-items: center;
         margin: 0 0.3em;
         a {
-          color: $color-azul-oscuro;
+          color: $color-gris;
           font-size: 1.3rem;
           margin-top: 0.6em;
         }
         svg {
-          font-size: 4rem;
+          font-size: 5rem;
         }
+      }
+    }
+    .contact-box-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .personal-info {
+        font-size: 1.6rem;
+        p{
+          margin-bottom: 0;
+          color: $color-gris;
+        }
+      }
+      .whatsapp {
+        width: 35%;
       }
     }
   }
@@ -454,8 +502,8 @@ footer {
   #my-skills {
     .icon-tech-skill {
       margin: 0.8em 2.7em 6em;
-      height: 5em;
-      width: 5em;
+      height: 6.5em;
+      width: 6.55em;
     }
     .info-tech-skills {
       hr {
@@ -514,7 +562,7 @@ footer {
 //     margin-top: 7em;
 //   }
 
-//   .contact-box div {
+//   .contact-box-icons div {
 //     color: #1B3448;
 //     font-size: 1.7rem;
 //     font-weight: 500;

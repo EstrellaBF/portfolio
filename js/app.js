@@ -1,15 +1,19 @@
 $(document).ready(function () {
   var $menuHome = $('#menu-home-container');
+
   const arrIconsTech = [
-    'jquery',
-    'firebase',
-    'javascript',
-    'node js',
-    'git',
-    'react',
-    'redux',
-    'sass',
-    'gulp'
+    { tool : 'jquery' , description : 'Librería de Javascript'},
+    { tool : 'firebase' , description : 'Plataforma para el uso de webs y Apps'},
+    { tool : 'javascript' , description : 'Lenguajes de Programación'},
+    { tool : 'node js' , description : 'Gestor de paquetes NPM'},
+    { tool : 'git' , description : 'Software de control de versiones'},
+    { tool : 'react' , description : 'Librería Javascript'},
+    { tool : 'redux' , description : 'Librería Javascript'},
+    { tool : 'sass' , description : 'Preprocesador CSS'},
+    { tool : 'gulp' , description : 'Automatizador de tareas'},
+    { tool : 'webpack' , description : 'Empaquetador de módulos y archivos'},
+    { tool : 'photoshop' , description : 'Programa para editar imágenes'},
+    { tool : 'svg' , description : 'formato de gráficos vectoriales 2D de HTML5'}
   ]
 
   // Creando un clon del menu justo alado del original
@@ -62,8 +66,9 @@ $(document).ready(function () {
   arrIconsTech.map(index =>
     $('.tech-skills-box').append(
       `<figure class="icon-tech-skill">
-          <img src="${'assets/images/' + index + '.png'}" class="img-responsive">
-          <figcaption>${index}</figcaption>
+          <img src="${'assets/images/' + index.tool + '.png'}" class="img-responsive">
+          <p>${index.tool}</p>
+          <figcaption>${index.description}</figcaption>
         </figure>`
     )
   );
@@ -73,10 +78,30 @@ $(document).ready(function () {
     // console.log('callback - particles.js config loaded');
   });
 
+  // Evento para whastapp
   $('#wpp').on('click', function(){
-        window.location.href = "https://api.whatsapp.com/send?phone=51971313111&text=I'm%20interested%20in%20your%20portfolio";
-
+    window.open("https://api.whatsapp.com/send?phone=51971313111&text=I'm%20interested%20in%20your%20portfolio");
   })
+
+
+    // // Evento para modificar el menú mientras se baja o sube el scroll
+  window.onscroll = function () {
+    // var scroll = window.scrollTop();
+    var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+    console.log(scroll);
+    // if (scroll > 770) {
+    //   console.log('supera a 770');
+    //   $('.original').show();
+    //   // $menuHome.hide();
+    // } else {
+    //   console.log('no supera');
+    // $('.original').hide();
+    //   // $menuHome.hide();
+    // }
+    if (scroll >= 1000 && scroll <= 2000 ) {
+      console.log('habilidades')
+    }
+  };
 
 });
 

@@ -30,7 +30,6 @@ hr {
 #menu-home-container {
   background-color: #fff;
   font-size: 1.6rem;
-  color: #002E5E;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -38,8 +37,9 @@ hr {
   border-radius: 0 0 8px 8px; }
 
 #menu-home-container a {
-  color: #002E5E;
-  font-size: 1.7rem; }
+  color: #808080;
+  font-weight: 100;
+  font-size: 1.8rem; }
 
 canvas {
   display: block;
@@ -138,16 +138,39 @@ canvas {
     text-align: center; }
   #my-skills .icon-tech-skill {
     display: inline-block;
-    height: 5em;
-    margin: 0.8em 1.3em 3em;
-    width: 5em; }
+    height: 7em;
+    margin: 0.8em 2em 3em;
+    position: relative;
+    width: 7em; }
     #my-skills .icon-tech-skill img {
       box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
       height: 100%;
       width: 100%; }
-    #my-skills .icon-tech-skill figcaption {
+    #my-skills .icon-tech-skill p {
       color: #fff;
-      text-transform: capitalize; }
+      display: contents;
+      text-transform: capitalize;
+      position: absolute; }
+    #my-skills .icon-tech-skill figcaption {
+      background-color: rgba(0, 0, 0, 0.315);
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 100;
+      height: 100%;
+      text-align: center;
+      top: 0;
+      transition: all .23s ease;
+      opacity: 0;
+      position: absolute;
+      visibility: hidden;
+      width: 100%; }
+  #my-skills .icon-tech-skill:hover > figcaption {
+    font-weight: 500;
+    opacity: 5;
+    visibility: visible;
+    width: 100%; }
+  #my-skills .icon-tech-skill:hover > p {
+    visibility: hidden; }
 
 /* PROJECTS */
 .project-title {
@@ -189,17 +212,20 @@ canvas {
 
 /* CONTACT */
 #my-contact-info {
+  background-color: #4bceb4;
   padding: 3em 0; }
+  #my-contact-info .contact-info-title h2, #my-contact-info .contact-info-title p {
+    color: #fff; }
   #my-contact-info .contact-info-container {
     background-color: #fff;
     padding: 1em;
     border-radius: 10px; }
-    #my-contact-info .contact-info-container .contact-box {
+    #my-contact-info .contact-info-container .contact-box-icons {
       margin: 5em 0;
       display: flex;
       justify-content: space-evenly; }
-      #my-contact-info .contact-info-container .contact-box div {
-        color: #002E5E;
+      #my-contact-info .contact-info-container .contact-box-icons div {
+        color: #808080;
         font-size: 1.7rem;
         font-weight: 500;
         padding: 0.4em 0;
@@ -211,12 +237,24 @@ canvas {
         justify-content: center;
         align-items: center;
         margin: 0 0.3em; }
-        #my-contact-info .contact-info-container .contact-box div a {
-          color: #002E5E;
+        #my-contact-info .contact-info-container .contact-box-icons div a {
+          color: #808080;
           font-size: 1.3rem;
           margin-top: 0.6em; }
-        #my-contact-info .contact-info-container .contact-box div svg {
-          font-size: 4rem; }
+        #my-contact-info .contact-info-container .contact-box-icons div svg {
+          font-size: 5rem; }
+    #my-contact-info .contact-info-container .contact-box-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      #my-contact-info .contact-info-container .contact-box-main .personal-info {
+        font-size: 1.6rem; }
+        #my-contact-info .contact-info-container .contact-box-main .personal-info p {
+          margin-bottom: 0;
+          color: #808080; }
+      #my-contact-info .contact-info-container .contact-box-main .whatsapp {
+        width: 35%; }
 
 /* FOOTER */
 footer {
@@ -285,8 +323,8 @@ footer {
 
   #my-skills .icon-tech-skill {
     margin: 0.8em 2.7em 6em;
-    height: 5em;
-    width: 5em; }
+    height: 6.5em;
+    width: 6.55em; }
   #my-skills .info-tech-skills hr {
     width: 18%; }
 
