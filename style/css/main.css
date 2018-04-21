@@ -212,10 +212,9 @@ canvas {
 
 /* CONTACT */
 #my-contact-info {
-  background-color: #4bceb4;
   padding: 3em 0; }
   #my-contact-info .contact-info-title h2, #my-contact-info .contact-info-title p {
-    color: #fff; }
+    color: #000000; }
   #my-contact-info .contact-info-container {
     background-color: #fff;
     padding: 1em;
@@ -225,24 +224,38 @@ canvas {
       display: flex;
       justify-content: space-evenly; }
       #my-contact-info .contact-info-container .contact-box-icons div {
-        color: #808080;
-        font-size: 1.7rem;
-        font-weight: 500;
-        padding: 0.4em 0;
-        border-radius: 5px;
-        width: 35%;
-        text-align: center;
+        align-items: center;
+        border-radius: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin: 0 0.3em; }
+        height: 4em;
+        padding: 1em;
+        width: 4em; }
         #my-contact-info .contact-info-container .contact-box-icons div a {
           color: #808080;
           font-size: 1.3rem;
-          margin-top: 0.6em; }
+          margin-top: 0.6em;
+          display: none; }
         #my-contact-info .contact-info-container .contact-box-icons div svg {
-          font-size: 5rem; }
+          width: 100%;
+          height: 100%; }
+      #my-contact-info .contact-info-container .contact-box-icons .linkedin-icon {
+        border: 2px solid #01b8f4; }
+        #my-contact-info .contact-info-container .contact-box-icons .linkedin-icon svg {
+          color: #01b8f4; }
+      #my-contact-info .contact-info-container .contact-box-icons .cv-icon {
+        border: 2px solid #a364bd; }
+        #my-contact-info .contact-info-container .contact-box-icons .cv-icon svg {
+          color: #a364bd; }
+      #my-contact-info .contact-info-container .contact-box-icons .github-icon {
+        border: 2px solid #808080; }
+        #my-contact-info .contact-info-container .contact-box-icons .github-icon svg {
+          color: #808080; }
+      #my-contact-info .contact-info-container .contact-box-icons .whatsapp-icon {
+        border: 2px solid #25D366; }
+        #my-contact-info .contact-info-container .contact-box-icons .whatsapp-icon svg {
+          color: #25D366; }
     #my-contact-info .contact-info-container .contact-box-main {
       display: flex;
       flex-direction: row;
@@ -277,10 +290,7 @@ footer {
   #my-skills .info-tech-skills hr {
     width: 37%; }
   #my-skills .icon-tech-skill {
-    display: inline-block;
-    height: 5.5em;
-    margin: 0.8em 1.7em 3em;
-    width: 5.5em; }
+    display: inline-block; }
 
   #my-projects .project-title hr {
     width: 19%; }
@@ -292,7 +302,11 @@ footer {
   #my-projects .project-img a {
     font-size: 1.3rem; }
   #my-projects .project-img a:last-child {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+
+  #my-contact-info .contact-info-container .contact-box-icons div {
+    height: 5em;
+    width: 5em; } }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 767px) {
   .background-box h1 {

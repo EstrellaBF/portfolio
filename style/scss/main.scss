@@ -290,12 +290,12 @@ canvas {
 
 
 #my-contact-info {
-  background-color: $color-verde;
+  // background-color: $color-verde;
   // margin: 7em 0 0 0;
   padding: 3em 0;
   .contact-info-title {
     h2, p {
-      color: #fff;
+      color: #000000;
     }
   }
   .contact-info-container {
@@ -307,26 +307,64 @@ canvas {
       display: flex;
       justify-content: space-evenly;
       div {
-        color: $color-gris;
-        font-size: 1.7rem;
-        font-weight: 500;
-        // border: 1px solid $color-azul-oscuro;
-        padding: 0.4em 0;
-        border-radius: 5px;
-        width: 35%;
-        text-align: center;
-        display: flex;
+        // align-items: center;
+        // border-radius: 5px;
+        // color: $color-gris;
+        // display: flex;
+        // font-size: 1.7rem;
+        // font-weight: 500;
+        // flex-direction: column;
+        // height: 6em;
+        // justify-content: center;
+        // // border: 1px solid $color-azul-oscuro;
+        // // width: 35%;
+        // text-align: center;
+        // margin: 0 0.3em;
+        // padding: 0.4em 0;
+        // width: 6em;
+        align-items: center;
+        border-radius: 50%;    
+        display: flex;  
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin: 0 0.3em;
+        height: 4em;  
+        padding: 1em;
+        width: 4em;
         a {
           color: $color-gris;
           font-size: 1.3rem;
           margin-top: 0.6em;
+          display: none;
         }
         svg {
-          font-size: 5rem;
+          // font-size: 5rem;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .linkedin-icon {
+        border: 2px solid #01b8f4;
+        svg {
+          // font-size: 5rem;
+          color: #01b8f4;
+        }
+      }
+      .cv-icon {
+        border: 2px solid #a364bd;
+        svg {
+          color: #a364bd;
+        }
+      }
+      .github-icon {
+        border: 2px solid $color-gris;
+        svg {
+          color: $color-gris;
+        }
+      }
+      .whatsapp-icon {
+        border: 2px solid #25D366;
+        svg {
+          color: #25D366;
         }
       }
     }
@@ -393,9 +431,9 @@ footer {
     }
     .icon-tech-skill {
       display: inline-block;
-      height: 5.5em;
-      margin: 0.8em 1.7em 3em;
-      width: 5.5em;
+      // height: 5.5em;
+      // margin: 0.8em 2em 3em;
+      // width: 5.5em;
     }
   }
 
@@ -419,6 +457,18 @@ footer {
       }
       a:last-child {
         font-size: 1.3rem;
+      }
+    }
+  }
+
+  // CONTACT BOX
+  #my-contact-info {
+    .contact-info-container {
+      .contact-box-icons {
+        div {
+          height: 5em;
+          width: 5em;
+        }
       }
     }
   }
