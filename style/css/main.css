@@ -18,7 +18,8 @@ hr {
   border-radius: 4em;
   height: 0px;
   text-align: center;
-  margin-top: 0; }
+  margin-top: 0;
+  width: 80%; }
 
 #my-skills, #tech-skills, #my-projects {
   /* height: 90vh; */
@@ -115,8 +116,6 @@ canvas {
     align-items: center;
     display: flex;
     flex-direction: column; }
-    #my-self .my-info-title hr {
-      width: 35%; }
   #my-self .my-info img {
     width: 30%;
     /* display: inline-block; */
@@ -132,8 +131,6 @@ canvas {
     flex-direction: column; }
     #my-skills .info-tech-skills h3 {
       color: #fff; }
-    #my-skills .info-tech-skills hr {
-      width: 70%; }
   #my-skills .tech-skills-box {
     text-align: center; }
   #my-skills .icon-tech-skill {
@@ -177,8 +174,6 @@ canvas {
   align-items: center;
   display: flex;
   flex-direction: column; }
-  .project-title hr {
-    width: 37%; }
 
 .project-img {
   align-items: center;
@@ -212,10 +207,13 @@ canvas {
 
 /* CONTACT */
 #my-contact-info {
-  background-color: #4bceb4;
   padding: 3em 0; }
-  #my-contact-info .contact-info-title h2, #my-contact-info .contact-info-title p {
-    color: #fff; }
+  #my-contact-info .contact-info-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+    #my-contact-info .contact-info-title h2, #my-contact-info .contact-info-title p {
+      color: #000000; }
   #my-contact-info .contact-info-container {
     background-color: #fff;
     padding: 1em;
@@ -225,24 +223,41 @@ canvas {
       display: flex;
       justify-content: space-evenly; }
       #my-contact-info .contact-info-container .contact-box-icons div {
-        color: #808080;
-        font-size: 1.7rem;
-        font-weight: 500;
-        padding: 0.4em 0;
-        border-radius: 5px;
-        width: 35%;
-        text-align: center;
+        align-items: center;
+        border-radius: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin: 0 0.3em; }
+        height: 4em;
+        padding: 0.8em;
+        width: 4em; }
         #my-contact-info .contact-info-container .contact-box-icons div a {
           color: #808080;
           font-size: 1.3rem;
           margin-top: 0.6em; }
         #my-contact-info .contact-info-container .contact-box-icons div svg {
-          font-size: 5rem; }
+          width: 100%;
+          height: 100%; }
+      #my-contact-info .contact-info-container .contact-box-icons .linkedin-icon {
+        border: 2px solid #01b8f4; }
+        #my-contact-info .contact-info-container .contact-box-icons .linkedin-icon svg {
+          color: #01b8f4; }
+      #my-contact-info .contact-info-container .contact-box-icons .cv-icon {
+        border: 2px solid #a364bd; }
+        #my-contact-info .contact-info-container .contact-box-icons .cv-icon svg {
+          color: #a364bd; }
+      #my-contact-info .contact-info-container .contact-box-icons .github-icon {
+        border: 2px solid #808080; }
+        #my-contact-info .contact-info-container .contact-box-icons .github-icon svg {
+          color: #808080; }
+      #my-contact-info .contact-info-container .contact-box-icons .whatsapp-icon {
+        border: 2px solid #25D366; }
+        #my-contact-info .contact-info-container .contact-box-icons .whatsapp-icon svg {
+          color: #25D366; }
+    #my-contact-info .contact-info-container .contact-box-icons div:hover {
+      height: 5em;
+      width: 5em;
+      transition: all .35s ease; }
     #my-contact-info .contact-info-container .contact-box-main {
       display: flex;
       flex-direction: row;
@@ -271,19 +286,9 @@ footer {
   .menu .me-box p {
     font-size: 1.9rem; }
 
-  #my-self .my-info-title hr {
-    width: 19%; }
-
-  #my-skills .info-tech-skills hr {
-    width: 37%; }
   #my-skills .icon-tech-skill {
-    display: inline-block;
-    height: 5.5em;
-    margin: 0.8em 1.7em 3em;
-    width: 5.5em; }
+    display: inline-block; }
 
-  #my-projects .project-title hr {
-    width: 19%; }
   #my-projects .project-img div {
     width: 80%; }
   #my-projects .project-img img {
@@ -292,17 +297,16 @@ footer {
   #my-projects .project-img a {
     font-size: 1.3rem; }
   #my-projects .project-img a:last-child {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+
+  #my-contact-info .contact-info-container .contact-box-icons div {
+    height: 5em;
+    width: 5em; } }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 767px) {
   .background-box h1 {
     font-size: 5.5rem; }
 
-  #my-self .my-info-title hr {
-    width: 15%; }
-
-  #my-projects .project-title hr {
-    width: 16%; }
   #my-projects .project-img img {
     height: 16em;
     width: 70%; }
@@ -318,18 +322,11 @@ footer {
   .menu .me-box p {
     font-size: 2.1rem; }
 
-  #my-self .my-info-title hr {
-    width: 9%; }
-
   #my-skills .icon-tech-skill {
     margin: 0.8em 2.7em 6em;
     height: 6.5em;
     width: 6.55em; }
-  #my-skills .info-tech-skills hr {
-    width: 18%; }
 
-  #my-projects .project-title hr {
-    width: 9%; }
   #my-projects .project-img img {
     height: 17em; } }
 
