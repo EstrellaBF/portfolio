@@ -1,350 +1,53 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
-  margin: 0;
-  padding: 0; }
+/*
+Error: Invalid CSS after "...: $opacity-blue": expected "{", was ";"
+        on line 364 of style/scss/main.scss
 
-body {
-  font-family: 'Sweet Hipster' !important; }
+359: 
+360: #my-contact-info {
+361: <<<<<<< HEAD
+362:   // background-color: $color-verde;
+363: =======
+364:   background-color: $opacity-blue;
+365: >>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
+366:   // margin: 7em 0 0 0;
+367:   padding: 3em 0;
+368:   .contact-info-title {  
+369:     align-items: center;
 
-h2, h3, h4, h4 {
-  font-size: 2.5rem;
-  font-family: 'Comfortaa', serif;
-  font-weight: 700;
-  text-align: center; }
-
-hr {
-  border: 3px solid #4bceb4;
-  border-radius: 4em;
-  height: 0px;
-  text-align: center;
-  margin-top: 0; }
-
-#my-skills, #tech-skills, #my-projects {
-  /* height: 90vh; */
-  padding: 3em 0; }
-
-.my-info-title, .info-tech-skills, .project-title {
-  margin-bottom: 2em; }
-
-#menu-home-container {
-  background-color: #fff;
-  font-size: 1.6rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0.6em 0;
-  border-radius: 0 0 8px 8px; }
-
-#menu-home-container a {
-  color: #808080;
-  font-weight: 100;
-  font-size: 1.8rem; }
-
-canvas {
-  display: block;
-  vertical-align: bottom; }
-
-/* MAIN MENU */
-#contact-me {
-  z-index: 99999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  flex-direction: initial;
-  justify-content: inherit; }
-  #contact-me #contact-me img {
-    width: 50%; }
-  #contact-me #contact-me a {
-    text-align: center;
-    width: 30%; }
-
-/* ---- particles.js container ---- */
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-
-/* Main background and menu */
-.background-box {
-  background-color: #002E5E;
-  /* position: relative; */
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 4em 0; }
-  .background-box h1 {
-    color: #fff;
-    font-family: 'Sacramento', cursive;
-    font-size: 4.5rem;
-    margin: 0;
-    text-align: center;
-    padding-bottom: 1em; }
-
-.menu {
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 3em;
-  z-index: 99999; }
-  .menu a {
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 200;
-    text-decoration: none;
-    /* -webkit-transition: font-size 0.5s; Esto es para el hover */ }
-  .menu .me-box {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* width: 30vw; */ }
-    .menu .me-box svg {
-      font-size: 4.5rem; }
-    .menu .me-box p {
-      font-size: 1.5rem;
-      text-align: center; }
-
-/* ABOUT ME */
-#my-self {
-  padding-bottom: 3em; }
-  #my-self .my-info-title {
-    align-items: center;
-    display: flex;
-    flex-direction: column; }
-    #my-self .my-info-title hr {
-      width: 35%; }
-  #my-self .my-info img {
-    width: 30%;
-    /* display: inline-block; */
-    float: left;
-    margin-right: 6%; }
-
-/* TECH SKILLS */
-#my-skills {
-  background-color: #002E5E; }
-  #my-skills .info-tech-skills {
-    align-items: center;
-    display: flex;
-    flex-direction: column; }
-    #my-skills .info-tech-skills h3 {
-      color: #fff; }
-    #my-skills .info-tech-skills hr {
-      width: 70%; }
-  #my-skills .tech-skills-box {
-    text-align: center; }
-  #my-skills .icon-tech-skill {
-    display: inline-block;
-    height: 7em;
-    margin: 0.8em 2em 3em;
-    position: relative;
-    width: 7em; }
-    #my-skills .icon-tech-skill img {
-      box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
-      height: 100%;
-      width: 100%; }
-    #my-skills .icon-tech-skill p {
-      color: #fff;
-      display: contents;
-      text-transform: capitalize;
-      position: absolute; }
-    #my-skills .icon-tech-skill figcaption {
-      background-color: rgba(0, 0, 0, 0.315);
-      color: #fff;
-      font-size: 1.4rem;
-      font-weight: 100;
-      height: 100%;
-      text-align: center;
-      top: 0;
-      transition: all .23s ease;
-      opacity: 0;
-      position: absolute;
-      visibility: hidden;
-      width: 100%; }
-  #my-skills .icon-tech-skill:hover > figcaption {
-    font-weight: 500;
-    opacity: 5;
-    visibility: visible;
-    width: 100%; }
-  #my-skills .icon-tech-skill:hover > p {
-    visibility: hidden; }
-
-/* PROJECTS */
-.project-title {
-  align-items: center;
-  display: flex;
-  flex-direction: column; }
-  .project-title hr {
-    width: 37%; }
-
-.project-img {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 4em; }
-  .project-img figcaption {
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    margin-bottom: 0.6em; }
-  .project-img div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 0.5em;
-    width: 100%; }
-    .project-img div a {
-      background-color: #245d88;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 1.5rem;
-      font-weight: 500;
-      text-align: center;
-      padding: 0.3em 0.4em;
-      width: 25%; }
-    .project-img div a:last-child {
-      background-color: #fff;
-      color: #245d88;
-      border: 1px solid #245d88; }
-
-/* CONTACT */
-#my-contact-info {
-  padding: 3em 0; }
-  #my-contact-info .contact-info-title h2, #my-contact-info .contact-info-title p {
-    color: #000000; }
-  #my-contact-info .contact-info-container {
-    background-color: #fff;
-    padding: 1em;
-    border-radius: 10px; }
-    #my-contact-info .contact-info-container .contact-box-icons {
-      margin: 5em 0;
-      display: flex;
-      justify-content: space-evenly; }
-      #my-contact-info .contact-info-container .contact-box-icons div {
-        align-items: center;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 4em;
-        padding: 1em;
-        width: 4em; }
-        #my-contact-info .contact-info-container .contact-box-icons div a {
-          color: #808080;
-          font-size: 1.3rem;
-          margin-top: 0.6em;
-          display: none; }
-        #my-contact-info .contact-info-container .contact-box-icons div svg {
-          width: 100%;
-          height: 100%; }
-      #my-contact-info .contact-info-container .contact-box-icons .linkedin-icon {
-        border: 2px solid #01b8f4; }
-        #my-contact-info .contact-info-container .contact-box-icons .linkedin-icon svg {
-          color: #01b8f4; }
-      #my-contact-info .contact-info-container .contact-box-icons .cv-icon {
-        border: 2px solid #a364bd; }
-        #my-contact-info .contact-info-container .contact-box-icons .cv-icon svg {
-          color: #a364bd; }
-      #my-contact-info .contact-info-container .contact-box-icons .github-icon {
-        border: 2px solid #808080; }
-        #my-contact-info .contact-info-container .contact-box-icons .github-icon svg {
-          color: #808080; }
-      #my-contact-info .contact-info-container .contact-box-icons .whatsapp-icon {
-        border: 2px solid #25D366; }
-        #my-contact-info .contact-info-container .contact-box-icons .whatsapp-icon svg {
-          color: #25D366; }
-    #my-contact-info .contact-info-container .contact-box-main {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-      #my-contact-info .contact-info-container .contact-box-main .personal-info {
-        font-size: 1.6rem; }
-        #my-contact-info .contact-info-container .contact-box-main .personal-info p {
-          margin-bottom: 0;
-          color: #808080; }
-      #my-contact-info .contact-info-container .contact-box-main .whatsapp {
-        width: 35%; }
-
-/* FOOTER */
-footer {
-  background-color: #000;
-  color: #fff;
-  height: 10vh;
-  /* margin-top: 4em; */
-  display: flex;
-  align-items: center; }
-  footer p {
-    text-align: center; }
-
-@media (min-width: 575px) {
-  .menu .me-box p {
-    font-size: 1.9rem; }
-
-  #my-self .my-info-title hr {
-    width: 19%; }
-
-  #my-skills .info-tech-skills hr {
-    width: 37%; }
-  #my-skills .icon-tech-skill {
-    display: inline-block; }
-
-  #my-projects .project-title hr {
-    width: 19%; }
-  #my-projects .project-img div {
-    width: 80%; }
-  #my-projects .project-img img {
-    height: 25em;
-    width: 60%; }
-  #my-projects .project-img a {
-    font-size: 1.3rem; }
-  #my-projects .project-img a:last-child {
-    font-size: 1.3rem; }
-
-  #my-contact-info .contact-info-container .contact-box-icons div {
-    height: 5em;
-    width: 5em; } }
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 767px) {
-  .background-box h1 {
-    font-size: 5.5rem; }
-
-  #my-self .my-info-title hr {
-    width: 15%; }
-
-  #my-projects .project-title hr {
-    width: 16%; }
-  #my-projects .project-img img {
-    height: 16em;
-    width: 70%; }
-  #my-projects .project-img div {
-    width: 100%; } }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 991px) {
-  .background-box h1 {
-    font-size: 7rem; }
-
-  .menu .me-box svg {
-    font-size: 5.8rem; }
-  .menu .me-box p {
-    font-size: 2.1rem; }
-
-  #my-self .my-info-title hr {
-    width: 9%; }
-
-  #my-skills .icon-tech-skill {
-    margin: 0.8em 2.7em 6em;
-    height: 6.5em;
-    width: 6.55em; }
-  #my-skills .info-tech-skills hr {
-    width: 18%; }
-
-  #my-projects .project-title hr {
-    width: 9%; }
-  #my-projects .project-img img {
-    height: 17em; } }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+style/scss/main.scss:364
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:677:in `block'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...: $opacity-blue\": expected \"{\", was \";\"\A         on line 364 of style/scss/main.scss\A \A 359: \A 360: #my-contact-info {\A 361: <<<<<<< HEAD\A 362:   // background-color: $color-verde;\A 363: =======\A 364:   background-color: $opacity-blue;\A 365: >>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a\A 366:   // margin: 7em 0 0 0;\A 367:   padding: 3em 0;\A 368:   .contact-info-title {  \A 369:     align-items: center;"; }

@@ -84,5 +84,28 @@ $(document).ready(function () {
     console.log($('#wpp'))
   })
 
+<<<<<<< HEAD
+=======
+
+  //   // // Evento para modificar el menú mientras se baja o sube el scroll
+  // window.onscroll = function () {
+  //   // var scroll = window.scrollTop();
+  //   var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+  //   console.log(scroll);
+  //   // if (scroll > 770) {
+  //   //   console.log('supera a 770');
+  //   //   $('.original').show();
+  //   //   // $menuHome.hide();
+  //   // } else {
+  //   //   console.log('no supera');
+  //   // $('.original').hide();
+  //   //   // $menuHome.hide();
+  //   // }
+  //   if (scroll >= 1000 && scroll <= 2000 ) {
+  //     console.log('habilidades')
+  //   }
+  // };
+
+>>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
 });
 
