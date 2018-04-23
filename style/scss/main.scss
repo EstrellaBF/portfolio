@@ -5,39 +5,6 @@
   padding: 0;
 }
 
-
-
-// .greeting {
-// 	display: flex;
-// 	// width: 300px;
-// 	height: 40px;
-// 	font-size: 40px;
-// 	line-height: 40px;
-// 	margin: 0 auto;
-// 	overflow: hidden;
-//   margin-bottom: 20px;
-// }
-
-// .message {
-//   color:#E31B6D;
-// 	padding-left: 45px;
-// 	animation: change 9s infinite;
-// }
-
-// @keyframes change {
-// 	0%{ margin-top: 0;}
-// 	20%{ margin-top: 0;}
-// 	25% {margin-top: -40px;}
-// 	50% {margin-top: -40px;}
-// 	55% {margin-top: -80px;}
-// 	80% {margin-top: -80px;}
-// 	85% {margin-top: -40px;}
-// 	95% {margin-top: -40px;}
-// 	100% {margin-top: 0;}
-// }
-
-
-
 $color-azul-oscuro: #002E5E;
 $color-azul : #245d88;
 $color-azul-claro : #0C8CE8;
@@ -57,10 +24,11 @@ h2, h3, h4, h4 {
   font-size: 2.5rem;
   font-family: 'Comfortaa', serif;
   font-weight: 700;
-  // margin-bottom: 0;
-  // margin-top: 1em;
   text-align: center;
-  // text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 hr{
@@ -69,11 +37,9 @@ hr{
   height: 0px;
   text-align: center;
   margin-top: 0;
-  // width: 80%;
  }
 
 #my-skills, #tech-skills, #my-projects {
-  /* height: 90vh; */
   padding: 3em 0;
 }
 
@@ -86,13 +52,10 @@ hr{
   border-radius: 0 0 8px 8px;
   ul {
     font-size: 1.6rem;
-    // color: $color-azul-oscuro;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0.6em 0;
-    // margin-bottom: 3em;
-    // box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.15);    
+    padding: 0.6em 0;    
     a {
       color: $color-gris;
       font-weight: 100;
@@ -117,36 +80,11 @@ hr{
   background-color: transparent;
 }
 
-// .nav-inv .nav-nav>.active>a, .nav-inv .nav-nav>.active>a:focus, .nav-inv .nav-nav>.active>a:hover {
-//   background-color: pink;
-//   color: red;
-// }
-
 canvas {
   display: block;
   vertical-align: bottom;
 }
 
-
-
-
-// #contact-me {
-//   z-index: 99999;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   display: flex;
-//   flex-direction: initial;
-//   justify-content: inherit;
-//   #contact-me img{
-//     width: 50%;
-//   }
-  
-//   #contact-me a {
-//     text-align: center;
-//     width: 30%;
-//   }
-// }
 
 /* ---- particles.js container ---- */
 #particles-js {
@@ -194,7 +132,6 @@ canvas {
     font-size: 1.3rem;
     font-weight: 200;
     text-decoration: none;
-    /* -webkit-transition: font-size 0.5s; Esto es para el hover */
   }
   .me-box {
     align-items: center;
@@ -228,7 +165,6 @@ canvas {
   .my-info {
     img {
       width: 30%;
-      /* display: inline-block; */
       float: left;
       margin-right: 6%;
     }
@@ -237,7 +173,6 @@ canvas {
 
 /* TECH SKILLS */
 #my-skills {
-  // background-color: $color-azul-oscuro;
   background-color: $opacity-blue;
   .info-tech-skills{
     align-items: center;
@@ -277,10 +212,7 @@ canvas {
       color: #fff;
       font-size: 1.4rem;
       font-weight: 100;
-      // text-transform: capitalize;
       height: 100%;
-      // left: 0;
-      // line-height: 5.5em;
       text-align: center;
       top: 0;
       transition: all .23s ease;
@@ -288,7 +220,6 @@ canvas {
       position: absolute;
       visibility: hidden;
       width: 100%;
-      // overflow: hidden;
     }
   }  
   .icon-tech-skill:hover>figcaption {
@@ -319,7 +250,6 @@ canvas {
   justify-content: center;
   margin-bottom: 4em;
   figcaption {
-    // font-weight: 600;
     font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 0.6em;
@@ -359,7 +289,6 @@ canvas {
 
 #my-contact-info {
   background-color: $opacity-blue;
-  // margin: 7em 0 0 0;
   padding: 3em 0;
   .contact-info-title {  
     align-items: center;
@@ -373,7 +302,6 @@ canvas {
     }
   }
   .contact-info-container {
-    // background-color: #fff;
     padding: 1em;
     border-radius: 10px;
     .contact-box-icons {
@@ -392,11 +320,8 @@ canvas {
         a {
           color: $color-gris;
           font-size: 1.3rem;
-          // margin-top: 0.6em;
-          // display: none;
         }
         svg {
-          // font-size: 5rem;
           width: 100%;
           height: 100%;
         }
@@ -404,7 +329,6 @@ canvas {
       .linkedin-icon {
         border: 2px solid $linkedin-color;
         svg {
-          // font-size: 5rem;
           color: $linkedin-color;
         }
       }
@@ -428,7 +352,6 @@ canvas {
       }
     }
     .contact-box-icons div:hover {
-      // outline: 3px solid pink;
       height: 6em;
       width: 6em;
       transition: all .30s ease;
@@ -458,8 +381,6 @@ footer {
   background-color: #000;
   color: #fff;
   height: 10vh;
-  /* margin-top: 4em; */
-  // padding: 2em;
   display: flex;
   align-items: center;
   p {
@@ -470,62 +391,23 @@ footer {
 @media (min-width:575px) {
 
   // MAIN MENU
-  .background-box {
-    .menu-main-title {
-      h1 {
-        // font-size: 8rem;
-      }
-      p {
-        // font-size: 2.5rem;
-      }
-    }
-    .menu-box {
-      .me-box {
-        p {
-          // font-size: 2.5rem;
-        }
-      }
-    }
-  }
-
 
   // ABOUT ME
-  #my-self {
-    .my-info-title {
-      // hr {
-      //   width: 19%;
-      // }
-    }
-  }
 
   // MY SKILLS
   #my-skills {
-    .info-tech-skills {
-      // hr {
-      //   width: 37%;
-      // }
-    }
     .icon-tech-skill {
       display: inline-block;
-      // height: 5.5em;
-      // margin: 0.8em 2em 3em;
-      // width: 5.5em;
     }
   }
 
   // PROJECTS
   #my-projects {
-    .project-title {
-      // hr {
-      //   width: 19%;
-      // }
-    }
     .project-img {
       div{
         width: 80%;
       }
       img {
-        // height: 25em;
         width: 100%;
       }
       a {
@@ -561,31 +443,14 @@ footer {
   }
 
   // ABOUT ME
-  #my-self {
-    .my-info-title {
-      // hr {
-      //   width: 15%;
-      // }
-    }
-  }
+
 
   // TECH
-  #my-skills {
-    .info-tech-skills {
-      // width: 30%;
-    }
-  }
 
   // PROYECTOS
   #my-projects {
-    .project-title {
-      // hr {
-      //   width: 16%;
-      // }
-    }
     .project-img {
       img {
-        // height: 16em;
         width: 100%;
       }
       div {
@@ -618,13 +483,6 @@ footer {
   }
   
   // ABOUT ME
-  #my-self {
-    .my-info-title {
-      // hr {
-      //   width: 9%;
-      // }
-    }
-  }
 
   // SKILLS
   #my-skills {
@@ -633,101 +491,30 @@ footer {
       height: 6.5em;
       width: 6.5em;
     }
-    .info-tech-skills {
-      // hr {
-      //   width: 18%;
-      // }
-    }
   }
 
   // PROJECTS
-  #my-projects {
-    .project-title {
-      // hr {
-      //   width: 9%;
-      // }
-    }
-    .project-img {
-      img {
-        // height: 17em;
-      }
-    }
-  }
 
 }
 
  /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1199px) {
 
-// MAIN MENU
-.menu-box {
-  .me-box { 
-    p {
-      font-size: 1.8rem;
+  // MAIN MENU
+  .menu-box {
+    .me-box { 
+      p {
+        font-size: 1.8rem;
+      }
     }
   }
-}
-// PORTFOLIO
-#my-skills {
-  .icon-tech-skill {
-    height: 7em;
-    margin: 0.8em 3em 6em;
-    width: 7em;
+  // PORTFOLIO
+  #my-skills {
+    .icon-tech-skill {
+      height: 7em;
+      margin: 0.8em 3em 6em;
+      width: 7em;
+    }
   }
-}
 
-
-//   .menu a {
-//     font-size: 2.5rem;
-//   }
-
-//   .background-box h1 {
-//     /* font-size: 8rem; */
-//   }
-
-//   .icon-tech-skill {
-//     width: 7vw;
-//     height: 15vh;
-//   }
-
-//   figure.img-responsive.project-img {
-//     width: 28%;
-//     margin-bottom: 7em;
-//     height: 25em;
-//   }
-
-//   .projects-box {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: space-between;
-//     margin: 2em 0;
-//   }
-
-//   #my-self, #my-skills, #tech-skills, #my-projects {
-//     /* height: 90vh; */
-//     margin-top: 7em;
-//   }
-
-//   .contact-box-icons div {
-//     color: #1B3448;
-//     font-size: 1.7rem;
-//     font-weight: 500;
-//     border: 1px solid #1B3448;
-//     padding: 0.6em;
-//     border-radius: 5px;
-//     width: 16%;
-//     text-align: center;
-//   }
-
-//   .text-center p {
-//     font-size: 2rem;
-//   }
-
-//   .my-info img {
-//     width: 20%;
-//     /* display: inline-block; */
-//     float: left;
-//     margin-right: 6%;
-//   }
 }

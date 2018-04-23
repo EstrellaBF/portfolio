@@ -14,6 +14,9 @@ h2, h3, h4, h4 {
   font-weight: 700;
   text-align: center; }
 
+h2 {
+  text-transform: uppercase; }
+
 hr {
   border: 1px solid #4bceb4;
   border-radius: 4em;
@@ -22,7 +25,6 @@ hr {
   margin-top: 0; }
 
 #my-skills, #tech-skills, #my-projects {
-  /* height: 90vh; */
   padding: 3em 0; }
 
 .my-info-title, .info-tech-skills, .project-title {
@@ -98,8 +100,7 @@ canvas {
     color: #fff;
     font-size: 1.3rem;
     font-weight: 200;
-    text-decoration: none;
-    /* -webkit-transition: font-size 0.5s; Esto es para el hover */ }
+    text-decoration: none; }
   .menu-box .me-box {
     align-items: center;
     display: flex;
@@ -124,7 +125,6 @@ canvas {
       min-width: 110px; }
   #my-self .my-info img {
     width: 30%;
-    /* display: inline-block; */
     float: left;
     margin-right: 6%; }
 
@@ -290,7 +290,6 @@ footer {
   background-color: #000;
   color: #fff;
   height: 10vh;
-  /* margin-top: 4em; */
   display: flex;
   align-items: center; }
   footer p {
