@@ -15,12 +15,11 @@ h2, h3, h4, h4 {
   text-align: center; }
 
 hr {
-  border: 2px solid #4bceb4;
+  border: 1px solid #4bceb4;
   border-radius: 4em;
   height: 0px;
   text-align: center;
-  margin-top: 0;
-  width: 80%; }
+  margin-top: 0; }
 
 #my-skills, #tech-skills, #my-projects {
   /* height: 90vh; */
@@ -53,24 +52,12 @@ hr {
   color: #000;
   font-weight: 400; }
 
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent; }
+
 canvas {
   display: block;
   vertical-align: bottom; }
-
-/* MAIN MENU */
-#contact-me {
-  z-index: 99999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  flex-direction: initial;
-  justify-content: inherit; }
-  #contact-me #contact-me img {
-    width: 50%; }
-  #contact-me #contact-me a {
-    text-align: center;
-    width: 30%; }
 
 /* ---- particles.js container ---- */
 #particles-js {
@@ -78,47 +65,53 @@ canvas {
   width: 100%;
   height: 100%; }
 
-/* Main background and menu */
+/* MAIN MENU */
 .background-box {
   background-color: #002E5E;
-  /* position: relative; */
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 4em 0; }
-  .background-box h1 {
+  .background-box .menu-main-title h1 {
     color: #fff;
     font-family: 'Sacramento', cursive;
-    font-size: 4.5rem;
+    font-size: 5rem;
     margin: 0;
     text-align: center;
-    padding-bottom: 1em; }
+    padding-bottom: 0.3em; }
+  .background-box .menu-main-title p {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center; }
 
-.menu {
+.menu-box {
   color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 3em;
   z-index: 99999; }
-  .menu a {
+  .menu-box a {
     color: #fff;
     font-size: 1.3rem;
     font-weight: 200;
     text-decoration: none;
     /* -webkit-transition: font-size 0.5s; Esto es para el hover */ }
-  .menu .me-box {
+  .menu-box .me-box {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width: 30vw; */ }
-    .menu .me-box svg {
+    width: 25vw; }
+    .menu-box .me-box svg {
       font-size: 4.5rem; }
-    .menu .me-box p {
-      font-size: 1.5rem;
-      text-align: center; }
+    .menu-box .me-box p {
+      font-size: 1.7rem;
+      text-align: center;
+      margin-top: 0.6em; }
 
 /* ABOUT ME */
 #my-self {
@@ -127,6 +120,8 @@ canvas {
     align-items: center;
     display: flex;
     flex-direction: column; }
+    #my-self .my-info-title hr {
+      min-width: 110px; }
   #my-self .my-info img {
     width: 30%;
     /* display: inline-block; */
@@ -135,13 +130,15 @@ canvas {
 
 /* TECH SKILLS */
 #my-skills {
-  background-color: #002E5E; }
+  background-color: rgba(231, 235, 239, 0.35); }
   #my-skills .info-tech-skills {
     align-items: center;
     display: flex;
     flex-direction: column; }
     #my-skills .info-tech-skills h3 {
-      color: #fff; }
+      color: #000; }
+    #my-skills .info-tech-skills hr {
+      min-width: 130px; }
   #my-skills .tech-skills-box {
     text-align: center; }
   #my-skills .icon-tech-skill {
@@ -151,11 +148,11 @@ canvas {
     position: relative;
     width: 7em; }
     #my-skills .icon-tech-skill img {
-      box-shadow: 1px 4px 3px 3px rgba(0, 0, 0, 0.19);
+      box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.19);
       height: 100%;
       width: 100%; }
     #my-skills .icon-tech-skill p {
-      color: #fff;
+      color: #000;
       display: contents;
       text-transform: capitalize;
       position: absolute; }
@@ -185,6 +182,8 @@ canvas {
   align-items: center;
   display: flex;
   flex-direction: column; }
+  .project-title hr {
+    min-width: 120px; }
 
 .project-img {
   align-items: center;
@@ -221,15 +220,17 @@ canvas {
 
 /* CONTACT */
 #my-contact-info {
+  background-color: rgba(231, 235, 239, 0.35);
   padding: 3em 0; }
   #my-contact-info .contact-info-title {
     align-items: center;
     display: flex;
     flex-direction: column; }
+    #my-contact-info .contact-info-title hr {
+      min-width: 160px; }
     #my-contact-info .contact-info-title h2, #my-contact-info .contact-info-title p {
-      color: #000000; }
+      color: #000; }
   #my-contact-info .contact-info-container {
-    background-color: #fff;
     padding: 1em;
     border-radius: 10px; }
     #my-contact-info .contact-info-container .contact-box-icons {
@@ -296,9 +297,6 @@ footer {
     text-align: center; }
 
 @media (min-width: 575px) {
-  .menu .me-box p {
-    font-size: 1.9rem; }
-
   #my-skills .icon-tech-skill {
     display: inline-block; }
 
@@ -325,13 +323,12 @@ footer {
     width: 100%; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 991px) {
-  .background-box h1 {
-    font-size: 7rem; }
-
-  .menu .me-box svg {
-    font-size: 5.8rem; }
-  .menu .me-box p {
-    font-size: 2.1rem; }
+  .background-box .menu-main-title h1 {
+    font-size: 6rem; }
+  .background-box .menu-box .me-box svg {
+    font-size: 4.5rem; }
+  .background-box .menu-box .me-box p {
+    font-size: 1.8rem; }
 
   #my-skills .icon-tech-skill {
     margin: 0.8em 2.7em 6em;
@@ -339,6 +336,9 @@ footer {
     width: 6.5em; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1199px) {
+  .menu-box .me-box p {
+    font-size: 1.8rem; }
+
   #my-skills .icon-tech-skill {
     height: 7em;
     margin: 0.8em 3em 6em;
