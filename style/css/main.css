@@ -1,21 +1,21 @@
 /*
 Error: Invalid CSS after "...: $opacity-blue": expected "{", was ";"
-        on line 364 of style/scss/main.scss
+        on line 294 of style/scss/main.scss
 
-359: 
-360: #my-contact-info {
-361: <<<<<<< HEAD
-362:   // background-color: $color-verde;
-363: =======
-364:   background-color: $opacity-blue;
-365: >>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
-366:   // margin: 7em 0 0 0;
-367:   padding: 3em 0;
-368:   .contact-info-title {  
-369:     align-items: center;
+289: 
+290: #my-contact-info {
+291: <<<<<<< HEAD
+292:   // background-color: $color-verde;
+293: =======
+294:   background-color: $opacity-blue;
+295: <<<<<<< HEAD
+296: >>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
+297:   // margin: 7em 0 0 0;
+298: =======
+299: >>>>>>> f1c35bdb1847d6b1b89d2f230b4c60c060ee224a
 
 Backtrace:
-style/scss/main.scss:364
+style/scss/main.scss:294
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -50,4 +50,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...: $opacity-blue\": expected \"{\", was \";\"\A         on line 364 of style/scss/main.scss\A \A 359: \A 360: #my-contact-info {\A 361: <<<<<<< HEAD\A 362:   // background-color: $color-verde;\A 363: =======\A 364:   background-color: $opacity-blue;\A 365: >>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a\A 366:   // margin: 7em 0 0 0;\A 367:   padding: 3em 0;\A 368:   .contact-info-title {  \A 369:     align-items: center;"; }
+  content: "Error: Invalid CSS after \"...: $opacity-blue\": expected \"{\", was \";\"\A         on line 294 of style/scss/main.scss\A \A 289: \A 290: #my-contact-info {\A 291: <<<<<<< HEAD\A 292:   // background-color: $color-verde;\A 293: =======\A 294:   background-color: $opacity-blue;\A 295: <<<<<<< HEAD\A 296: >>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a\A 297:   // margin: 7em 0 0 0;\A 298: =======\A 299: >>>>>>> f1c35bdb1847d6b1b89d2f230b4c60c060ee224a"; }
