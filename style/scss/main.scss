@@ -288,15 +288,7 @@ canvas {
 /* CONTACT */
 
 #my-contact-info {
-<<<<<<< HEAD
-  // background-color: $color-verde;
-=======
   background-color: $opacity-blue;
-<<<<<<< HEAD
->>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
-  // margin: 7em 0 0 0;
-=======
->>>>>>> f1c35bdb1847d6b1b89d2f230b4c60c060ee224a
   padding: 3em 0;
   .contact-info-title {  
     align-items: center;
@@ -306,11 +298,7 @@ canvas {
       min-width: 160px;
     }
     h2, p {
-<<<<<<< HEAD
-      color: #000000;
-=======
       color: #000;
->>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
     }
   }
   .contact-info-container {
@@ -321,24 +309,6 @@ canvas {
       display: flex;
       justify-content: space-evenly;
       div {
-<<<<<<< HEAD
-        // align-items: center;
-        // border-radius: 5px;
-        // color: $color-gris;
-        // display: flex;
-        // font-size: 1.7rem;
-        // font-weight: 500;
-        // flex-direction: column;
-        // height: 6em;
-        // justify-content: center;
-        // // border: 1px solid $color-azul-oscuro;
-        // // width: 35%;
-        // text-align: center;
-        // margin: 0 0.3em;
-        // padding: 0.4em 0;
-        // width: 6em;
-=======
->>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
         align-items: center;
         border-radius: 50%;    
         display: flex;  
@@ -350,47 +320,10 @@ canvas {
         a {
           color: $color-gris;
           font-size: 1.3rem;
-<<<<<<< HEAD
-<<<<<<< HEAD
-          margin-top: 0.6em;
-          display: none;
-=======
-          // margin-top: 0.6em;
-          // display: none;
->>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
-=======
->>>>>>> f1c35bdb1847d6b1b89d2f230b4c60c060ee224a
         }
         svg {
           width: 100%;
           height: 100%;
-<<<<<<< HEAD
-        }
-      }
-      .linkedin-icon {
-        border: 2px solid #01b8f4;
-        svg {
-          // font-size: 5rem;
-          color: #01b8f4;
-        }
-      }
-      .cv-icon {
-        border: 2px solid #a364bd;
-        svg {
-          color: #a364bd;
-        }
-      }
-      .github-icon {
-        border: 2px solid $color-gris;
-        svg {
-          color: $color-gris;
-        }
-      }
-      .whatsapp-icon {
-        border: 2px solid #25D366;
-        svg {
-          color: #25D366;
-=======
         }
       }
       .linkedin-icon {
@@ -409,7 +342,6 @@ canvas {
         border: 2px solid $color-gris;
         svg {
           color: $color-gris;
->>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
         }
       }
       .whatsapp-icon {
