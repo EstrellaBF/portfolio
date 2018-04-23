@@ -84,24 +84,24 @@ $(document).ready(function () {
   })
 
 
-    // // Evento para modificar el menú mientras se baja o sube el scroll
-  window.onscroll = function () {
-    // var scroll = window.scrollTop();
-    var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-    console.log(scroll);
-    // if (scroll > 770) {
-    //   console.log('supera a 770');
-    //   $('.original').show();
-    //   // $menuHome.hide();
-    // } else {
-    //   console.log('no supera');
-    // $('.original').hide();
-    //   // $menuHome.hide();
-    // }
-    if (scroll >= 1000 && scroll <= 2000 ) {
-      console.log('habilidades')
-    }
-  };
+  //   // // Evento para modificar el menú mientras se baja o sube el scroll
+  // window.onscroll = function () {
+  //   // var scroll = window.scrollTop();
+  //   var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+  //   console.log(scroll);
+  //   // if (scroll > 770) {
+  //   //   console.log('supera a 770');
+  //   //   $('.original').show();
+  //   //   // $menuHome.hide();
+  //   // } else {
+  //   //   console.log('no supera');
+  //   // $('.original').hide();
+  //   //   // $menuHome.hide();
+  //   // }
+  //   if (scroll >= 1000 && scroll <= 2000 ) {
+  //     console.log('habilidades')
+  //   }
+  // };
 
 });
 

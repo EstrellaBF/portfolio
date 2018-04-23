@@ -5,7 +5,8 @@
   padding: 0; }
 
 body {
-  font-family: 'Sweet Hipster' !important; }
+  font-family: 'Sweet Hipster' !important;
+  position: relative; }
 
 h2, h3, h4, h4 {
   font-size: 2.5rem;
@@ -14,7 +15,7 @@ h2, h3, h4, h4 {
   text-align: center; }
 
 hr {
-  border: 3px solid #4bceb4;
+  border: 2px solid #4bceb4;
   border-radius: 4em;
   height: 0px;
   text-align: center;
@@ -30,17 +31,27 @@ hr {
 
 #menu-home-container {
   background-color: #fff;
-  font-size: 1.6rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0.6em 0;
   border-radius: 0 0 8px 8px; }
+  #menu-home-container ul {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.6em 0; }
+    #menu-home-container ul a {
+      color: #808080;
+      font-weight: 100;
+      font-size: 1.8rem;
+      padding: 0; }
+      #menu-home-container ul a p {
+        margin: 0; }
 
-#menu-home-container a {
-  color: #808080;
-  font-weight: 100;
-  font-size: 1.8rem; }
+.navbar {
+  border: none; }
+
+.nav-watch .nav-watch > .active > a > p, .nav-watch .nav-watch > .active > a > p:focus, .nav-watch .nav-watch > .active > a > p:hover {
+  color: #000;
+  font-weight: 400; }
 
 canvas {
   display: block;
@@ -185,11 +196,14 @@ canvas {
     font-size: 2.5rem;
     text-transform: capitalize;
     margin-bottom: 0.6em; }
+  .project-img img {
+    max-width: 250px; }
   .project-img div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 0.5em;
+    max-width: 335px;
     width: 100%; }
     .project-img div a {
       background-color: #245d88;
@@ -229,12 +243,11 @@ canvas {
         flex-direction: column;
         justify-content: center;
         height: 4em;
-        padding: 0.8em;
+        padding: 1em;
         width: 4em; }
         #my-contact-info .contact-info-container .contact-box-icons div a {
           color: #808080;
-          font-size: 1.3rem;
-          margin-top: 0.6em; }
+          font-size: 1.3rem; }
         #my-contact-info .contact-info-container .contact-box-icons div svg {
           width: 100%;
           height: 100%; }
@@ -255,9 +268,9 @@ canvas {
         #my-contact-info .contact-info-container .contact-box-icons .whatsapp-icon svg {
           color: #25D366; }
     #my-contact-info .contact-info-container .contact-box-icons div:hover {
-      height: 5em;
-      width: 5em;
-      transition: all .35s ease; }
+      height: 6em;
+      width: 6em;
+      transition: all .30s ease; }
     #my-contact-info .contact-info-container .contact-box-main {
       display: flex;
       flex-direction: row;
@@ -292,8 +305,7 @@ footer {
   #my-projects .project-img div {
     width: 80%; }
   #my-projects .project-img img {
-    height: 25em;
-    width: 60%; }
+    width: 100%; }
   #my-projects .project-img a {
     font-size: 1.3rem; }
   #my-projects .project-img a:last-child {
@@ -308,8 +320,7 @@ footer {
     font-size: 5.5rem; }
 
   #my-projects .project-img img {
-    height: 16em;
-    width: 70%; }
+    width: 100%; }
   #my-projects .project-img div {
     width: 100%; } }
 /* Medium devices (desktops, 992px and up) */
@@ -325,9 +336,12 @@ footer {
   #my-skills .icon-tech-skill {
     margin: 0.8em 2.7em 6em;
     height: 6.5em;
-    width: 6.55em; }
-
-  #my-projects .project-img img {
-    height: 17em; } }
+    width: 6.5em; } }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1199px) {
+  #my-skills .icon-tech-skill {
+    height: 7em;
+    margin: 0.8em 3em 6em;
+    width: 7em; } }
 
 /*# sourceMappingURL=main.css.map */
