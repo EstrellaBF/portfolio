@@ -81,8 +81,11 @@ $(document).ready(function () {
   // Evento para whastapp
   $('#wpp').on('click', function(){
     window.open("https://api.whatsapp.com/send?phone=51971313111&text=I'm%20interested%20in%20your%20portfolio");
+    console.log($('#wpp'))
   })
 
+<<<<<<< HEAD
+=======
 
   //   // // Evento para modificar el menú mientras se baja o sube el scroll
   // window.onscroll = function () {
@@ -103,5 +106,6 @@ $(document).ready(function () {
   //   }
   // };
 
+>>>>>>> 6bd7485be1dd99f1bbb482d46fb2469b8db1f21a
 });
 
