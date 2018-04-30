@@ -41,7 +41,7 @@ $(document).ready(function () {
 
       widthOrgElement = orgElement.css('width');
 
-      $('.cloned').css({'left': leftOrgElement + 'px', 'width': widthOrgElement,'top': 0, "box-shadow":"0px 0px 4px 1px rgba(0, 0, 0, 0.15)"})
+      $('.cloned').css({'left': leftOrgElement + 'px', 'width': widthOrgElement,'top': 0, 'box-shadow':'0px 0px 4px 1px rgba(0, 0, 0, 0.15)', 'background-color': '#000' })
       .show();
       $('.original').css('visibility', 'hidden');
     } else {
