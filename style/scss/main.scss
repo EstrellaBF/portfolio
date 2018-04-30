@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
 }
-
 $color-azul-oscuro: #002E5E;
 $color-azul : #245d88;
 $color-azul-claro : #0C8CE8;
@@ -256,6 +255,7 @@ canvas {
   }
   img {
     // border-radius: 0.7em;
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.19);
     max-width: 250px;
   }
   div {
