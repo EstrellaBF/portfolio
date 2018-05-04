@@ -257,7 +257,8 @@ canvas {
         #my-contact-info .contact-info-container .contact-box-icons .linkedin-icon svg {
           color: #01b8f4; }
       #my-contact-info .contact-info-container .contact-box-icons .cv-icon {
-        border: 2px solid #a364bd; }
+        border: 2px solid #a364bd;
+        padding: 1.2em; }
         #my-contact-info .contact-info-container .contact-box-icons .cv-icon svg {
           color: #a364bd; }
       #my-contact-info .contact-info-container .contact-box-icons .github-icon {
