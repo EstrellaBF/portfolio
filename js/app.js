@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  var $menuHome = $('#menu-home-container');
+  let $menuHome = $('#menu-home-container');
+  const $projectImg = $('.project-img').find('img');
 
   const arrIconsTech = [
     { tool : 'jquery' , description : 'Librería de Javascript'},
@@ -15,6 +16,8 @@ $(document).ready(function () {
     { tool : 'photoshop' , description : 'Programa para editar imágenes'},
     { tool : 'svg' , description : 'formato de gráficos vectoriales 2D de HTML5'}
   ]
+
+  $('.modal-info').hide();
 
   // Creando un clon del menu justo alado del original
   $('#menu-home-container').addClass('original').clone().insertAfter('#menu-home-container').addClass('cloned')
@@ -51,7 +54,7 @@ $(document).ready(function () {
     }
   }
   
-// 
+
   let upWindow = function () {
     // var el = document.getElementsByTagName('body');
     var $el = ('body');
@@ -83,25 +86,24 @@ $(document).ready(function () {
     window.open("https://api.whatsapp.com/send?phone=51971313111&text=I'm%20interested%20in%20your%20portfolio");
   })
 
+  // modal
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus()
+  })
+  console.log($('.modal-info'));
 
-  //   // // Evento para modificar el menú mientras se baja o sube el scroll
-  // window.onscroll = function () {
-  //   // var scroll = window.scrollTop();
-  //   var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-  //   console.log(scroll);
-  //   // if (scroll > 770) {
-  //   //   console.log('supera a 770');
-  //   //   $('.original').show();
-  //   //   // $menuHome.hide();
-  //   // } else {
-  //   //   console.log('no supera');
-  //   // $('.original').hide();
-  //   //   // $menuHome.hide();
-  //   // }
-  //   if (scroll >= 1000 && scroll <= 2000 ) {
-  //     console.log('habilidades')
-  //   }
-  // };
+  // Images project
+  function showInfo() {
+    // console.log($projectImg)
+    console.log($(this))
+    console.log()
+$(this).next().next().append(`
+
+`)
+  }
+
+  // $projectImg.on('click', showInfo);
+
 
 });
 
