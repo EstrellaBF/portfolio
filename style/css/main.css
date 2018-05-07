@@ -73,7 +73,7 @@ canvas {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 4em 0; }
   .background-box .menu-main-title h1 {
     color: #fff;
@@ -113,6 +113,36 @@ canvas {
       text-align: center;
       margin-top: 0.6em; }
 
+.arrow:before {
+  content: '\f107';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #fff;
+  position: absolute;
+  opacity: 0.7;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  font-size: 60px;
+  /* width: 60px; */
+  height: 40px;
+  /* line-height: 40px; */
+  text-align: center;
+  border-radius: 10px;
+  /* bottom: 20px; */
+  left: 50%;
+  margin-left: -20px;
+  animation: bounce 1s ease infinite;
+  top: 550px; }
+
+.arrow:focus, .arrow:hover {
+  text-decoration: none; }
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%); }
+  100% {
+    transform: translateY(0%); } }
 /* ABOUT ME */
 #my-self {
   padding-bottom: 3em; }
