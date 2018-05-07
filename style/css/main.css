@@ -68,81 +68,47 @@ canvas {
 
 /* MAIN MENU */
 .background-box {
-  background-color: #002E5E;
+  background-color: #14191e;
   position: relative;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 4em 0; }
-  .background-box .menu-main-title h1 {
-    color: #fff;
-    font-family: 'Sacramento', cursive;
-    font-size: 5rem;
-    margin: 0;
-    text-align: center;
-    padding-bottom: 0.3em; }
-  .background-box .menu-main-title p {
-    color: #fff;
+  /* justify-content: space-evenly; */
+  padding: 1.5em 0; }
+  .background-box .menu-box {
     font-size: 1.8rem;
-    line-height: 1.2;
-    text-align: center; }
-
-.menu-box {
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 3em;
-  z-index: 99999; }
-  .menu-box a {
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 200;
-    text-decoration: none; }
-  .menu-box .me-box {
-    align-items: center;
+    text-align: center;
+    z-index: 9999; }
+    .background-box .menu-box li {
+      display: inline-block; }
+      .background-box .menu-box li a {
+        color: #fff; }
+      .background-box .menu-box li a:focus, .background-box .menu-box li a:hover {
+        text-decoration: none; }
+    .background-box .menu-box li:nth-child(1)::after, .background-box .menu-box li:nth-child(2)::after {
+      content: "|";
+      color: #fff;
+      display: inline-block;
+      font-size: 1.6rem;
+      padding: 0 0.5em 0; }
+  .background-box .menu-main-title {
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 25vw; }
-    .menu-box .me-box svg {
-      font-size: 4.5rem; }
-    .menu-box .me-box p {
-      font-size: 1.7rem;
+    justify-content: center; }
+    .background-box .menu-main-title h1 {
+      color: #fff;
+      font-family: 'Sacramento', cursive;
+      font-size: 5rem;
+      margin: 0;
       text-align: center;
-      margin-top: 0.6em; }
+      padding-bottom: 0.3em; }
+    .background-box .menu-main-title p {
+      color: #fff;
+      font-size: 1.8rem;
+      line-height: 0;
+      text-align: center; }
 
-.arrow:before {
-  content: '\f107';
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #fff;
-  position: absolute;
-  opacity: 0.7;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  font-size: 60px;
-  /* width: 60px; */
-  height: 40px;
-  /* line-height: 40px; */
-  text-align: center;
-  border-radius: 10px;
-  /* bottom: 20px; */
-  left: 50%;
-  margin-left: -20px;
-  animation: bounce 1s ease infinite;
-  top: 550px; }
-
-.arrow:focus, .arrow:hover {
-  text-decoration: none; }
-
-@keyframes bounce {
-  50% {
-    transform: translateY(-50%); }
-  100% {
-    transform: translateY(0%); } }
 /* ABOUT ME */
 #my-self {
   padding-bottom: 3em; }
@@ -366,9 +332,6 @@ footer {
     width: 6.5em; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1199px) {
-  .menu-box .me-box p {
-    font-size: 1.8rem; }
-
   #my-skills .icon-tech-skill {
     height: 7em;
     margin: 0.8em 3em 6em;

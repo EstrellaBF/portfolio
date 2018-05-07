@@ -94,14 +94,39 @@ canvas {
 
 /* MAIN MENU */
 .background-box {
-  background-color: $color-azul-oscuro;
+  background-color: #14191e;
   position: relative;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 4em 0;
+  /* justify-content: space-evenly; */
+  padding: 1.5em 0;
+  .menu-box {
+    font-size: 1.8rem;
+    text-align: center;
+    z-index: 9999;
+    li {
+      display: inline-block;
+      a {
+        color: #fff;
+      }
+      a:focus, a:hover {
+        text-decoration: none;
+      }
+    }
+    li:nth-child(1)::after, li:nth-child(2)::after {
+      content: "|";
+      color: #fff;
+      display: inline-block;
+      font-size: 1.6rem;
+      padding: 0 0.5em 0;
+    }
+  }
   .menu-main-title{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h1 {
       color: #fff;
       font-family: 'Sacramento', cursive;
@@ -110,79 +135,15 @@ canvas {
       text-align: center;
       padding-bottom: 0.3em;
     }
-    p{
+    p {
       color: #fff;
       font-size: 1.8rem;
-      line-height: 1.2;
+      line-height: 0;
       text-align: center;
     }
   }
 }
 
-.menu-box {
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 3em;
-  z-index: 99999;
-  a{
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: 200;
-    text-decoration: none;
-  }
-  .me-box {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 25vw;
-    svg {
-      font-size: 4.5rem;
-    }
-    p {
-      font-size: 1.7rem;
-      text-align: center;
-      margin-top: 0.6em;
-    }
-  }
-}
-
-.arrow:before {
-  content: '\f107';
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #fff;
-  position: absolute;
-  opacity: 0.7;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  font-size: 60px;
-  /* width: 60px; */
-  height: 40px;
-  /* line-height: 40px; */
-  text-align: center;
-  border-radius: 10px;
-  /* bottom: 20px; */
-  left: 50%;
-  margin-left: -20px;
-  animation: bounce 1s ease infinite;
-  top: 550px;
-}
-.arrow:focus, .arrow:hover {
-  text-decoration: none;
-}
-
-@keyframes bounce {
-  50% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 
 /* ABOUT ME */
 #my-self {
@@ -427,6 +388,7 @@ footer {
 
   // MAIN MENU
 
+  
   // ABOUT ME
 
   // MY SKILLS
@@ -536,13 +498,13 @@ footer {
 @media (min-width: 1199px) {
 
   // MAIN MENU
-  .menu-box {
-    .me-box { 
-      p {
-        font-size: 1.8rem;
-      }
-    }
-  }
+  // .background-box {
+  //   .menu-box {
+  //     li:nth-child(1)::after, .background-box .menu-box li:nth-child(2)::after {
+        
+  //     }
+  //   }
+  // }
   // PORTFOLIO
   #my-skills {
     .icon-tech-skill {
