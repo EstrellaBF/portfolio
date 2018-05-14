@@ -14,7 +14,8 @@ $(document).ready(function () {
     { tool : 'gulp' , description : 'Automatizador de tareas'},
     { tool : 'webpack' , description : 'Empaquetador de módulos y archivos'},
     { tool : 'photoshop' , description : 'Programa para editar imágenes'},
-    { tool : 'svg' , description : 'formato de gráficos vectoriales 2D de HTML5'}
+    { tool : 'svg' , description : 'formato de gráficos vectoriales 2D de HTML5'},
+    { tool : 'android' , description : ''}
   ]
 
   $('.modal-info').hide();
